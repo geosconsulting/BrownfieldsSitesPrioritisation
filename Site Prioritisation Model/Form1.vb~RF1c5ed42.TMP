@@ -1,0 +1,451 @@
+Imports System
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Collections
+Imports System.Data.OleDb
+Imports System.Diagnostics
+Imports System.IO
+Imports System.Windows.Forms
+Imports System.Drawing.Printing
+Imports System.Resources
+
+
+Public Class Form1
+    Dim nomefile As String
+
+    'Connessione alla base dati Access
+    Public con As New System.Data.OleDb.OleDbConnection
+
+    'ds=database effettivo da=vista sui dati
+    Dim ds As New DataSet
+    Dim da As OleDb.OleDbDataAdapter
+
+    Dim sql As String
+    Dim contatore, inc As Integer
+    Dim Site_Information As String
+
+    'Dichiarazioni variabili con i dati del database
+    Dim CodiceSito, NomeSito, Address1, Address2, Town, County, PostCode, LocalAuthority, NG_Square As String
+    Dim SiteGradient, DirectionSlope, GasPurification As String
+    Dim northing, easting, SiteSize, NPartToSite, AnnualRainfall As Integer
+
+    Public Shared Sub Main()
+
+    End Sub
+
+    Private Sub btn_Load_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Load.Click
+
+        'Dim MaxRows As Integer
+
+        OpenFileDialog1.ShowDialog()
+        nomefile = OpenFileDialog1.FileName
+        Me.chkGasPurification.Checked = False
+
+        If nomefile = "" Then
+            MsgBox("Data loading cancelled...", MsgBoxStyle.Critical, "Error")
+            Exit Sub
+        End If
+
+        ToolStripStatusLabel1.Text = "Now using file " & nomefile
+
+        Connect()
+        Display()
+
+        'MaxRows = ds.Tables(Site_Information).Rows.Count
+
+
+    End Sub
+
+    Private Sub btn_Exit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Exit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_SaveAs.Click
+
+        SaveFileDialog1.ShowDialog()
+        SaveFileDialog1.FileName = nomefile
+
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        'variabile per verificare se apre un database per la prima volta in caso contrario cambio 
+        'la procedura per la connessione al database
+
+        contatore = 1
+
+        'Scelte Site Gradient combobox
+        Me.cmbSiteGradient.Items.Add("Embanked")
+        Me.cmbSiteGradient.Items.Add("Level")
+        Me.cmbSiteGradient.Items.Add("Not known")
+        Me.cmbSiteGradient.Items.Add("Sloped")
+        Me.cmbSiteGradient.Items.Add("Terraced")
+
+        'Scelte Direction Slope combobox
+        Me.cmbDirectionSlope.Items.Add("No slope")
+        Me.cmbDirectionSlope.Items.Add("North")
+        Me.cmbDirectionSlope.Items.Add("North-east")
+        Me.cmbDirectionSlope.Items.Add("East")
+        Me.cmbDirectionSlope.Items.Add("South-east")
+        Me.cmbDirectionSlope.Items.Add("South")
+        Me.cmbDirectionSlope.Items.Add("South-west")
+        Me.cmbDirectionSlope.Items.Add("West")
+        Me.cmbDirectionSlope.Items.Add("North-West")
+        Me.cmbDirectionSlope.Items.Add("Not known")
+
+        'Scelte Site Occupation combobox
+        Me.cmbSiteOccupation.Items.Add("Frequently")
+        Me.cmbSiteOccupation.Items.Add("24 hours")
+        Me.cmbSiteOccupation.Items.Add("Working hours")
+        Me.cmbSiteOccupation.Items.Add("Infrequently")
+        Me.cmbSiteOccupation.Items.Add("Not known")
+
+        'Scelte Site Occupation combobox
+        Me.lstNGSquare.Items.Add("SH")
+        Me.lstNGSquare.Items.Add("SM")
+        Me.lstNGSquare.Items.Add("SR")
+        Me.lstNGSquare.Items.Add("SS")
+        Me.lstNGSquare.Items.Add("SW")
+        Me.lstNGSquare.Items.Add("NW")
+        Me.lstNGSquare.Items.Add("NX")
+        Me.lstNGSquare.Items.Add("TA")
+        Me.lstNGSquare.Items.Add("OV")
+
+        'Scelte per Perched ComboBox su tab3
+        Me.cmbPerchedWaterTable.Items.Add("Present (known from SI)")
+        Me.cmbPerchedWaterTable.Items.Add("Suspected (Desk Study)")
+        Me.cmbPerchedWaterTable.Items.Add("Not present (known from SI)")
+        Me.cmbPerchedWaterTable.Items.Add("Not suspected (Desk Study)")
+        Me.cmbPerchedWaterTable.Items.Add("Not known")
+
+        'Scelte per BedRock Geology ComboBox su tab3
+        Me.cmbBedrockGeology.Items.Add("Chalk/Limestone")
+        Me.cmbBedrockGeology.Items.Add("Sandstone/Sands")
+        Me.cmbBedrockGeology.Items.Add("Granite/Basalt")
+        Me.cmbBedrockGeology.Items.Add("Silts/Clays")
+        Me.cmbBedrockGeology.Items.Add("Coal Measures")
+        Me.cmbBedrockGeology.Items.Add("Metamorphic (Schists etc.)")
+        Me.cmbBedrockGeology.Items.Add("Other")
+        Me.cmbBedrockGeology.Items.Add("Not known")
+
+        'Scelte per Type of Deposit ComboBox su tab3
+        Me.cmbTypeOfDeposit.Items.Add("Clay, Silts")
+        Me.cmbTypeOfDeposit.Items.Add("Sand, Gravel")
+        Me.cmbTypeOfDeposit.Items.Add("Clay/Silt over Sand/Gravel")
+        Me.cmbTypeOfDeposit.Items.Add("Sand/Gravel over Clay/Silt")
+        Me.cmbTypeOfDeposit.Items.Add("Not known")
+
+        'Scelte per NRA Aquifer Classification  ComboBox su tab4
+        Me.cmbNRAAquiferClassification.Items.Add("Major")
+        Me.cmbNRAAquiferClassification.Items.Add("Minor")
+        Me.cmbNRAAquiferClassification.Items.Add("Non-aquifer")
+        Me.cmbNRAAquiferClassification.Items.Add("Unclassified")
+
+        'Scelte per NRA Aquifer Vulnerability ComboBox su tab4
+        Me.cmbNRAAquiferVulnerability.Items.Add("High")
+        Me.cmbNRAAquiferVulnerability.Items.Add("Mediuim")
+        Me.cmbNRAAquiferVulnerability.Items.Add("Low")
+        Me.cmbNRAAquiferVulnerability.Items.Add("Unclassified")
+
+        'Scelte per Data Source ComboBox su tab4
+        Me.cmbDataSource.Items.Add("Environment Agency")
+        Me.cmbDataSource.Items.Add("1:1,000,000 Map")
+        Me.cmbDataSource.Items.Add("1:100,000 Map")
+        Me.cmbDataSource.Items.Add("Regional Appendix")
+        Me.cmbDataSource.Items.Add("Scotland-Classified by R & T")
+        Me.cmbDataSource.Items.Add("Not Sourced")
+
+
+    End Sub
+
+
+    Private Sub btn_Access_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_Access.Click
+        
+        If nomefile = "" Then
+            MsgBox("Load a database please", MsgBoxStyle.Critical, "Error")
+            Exit Sub
+        End If
+
+        Try
+            System.Diagnostics.Process.Start(nomefile)
+        Catch ex As Exception
+            MsgBox("Access not installed or impossible to locate." & (Chr(13)) & " Please check if Access has been installed in the default directory", MsgBoxStyle.RetryCancel, "Error")
+        End Try
+
+    End Sub
+
+    Private Sub txtSiteCode_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtSiteCode.MouseHover
+        ToolTipSiteCode.SetToolTip(txtSiteCode, "The site code is a mandatory information and can be " & Chr(13) & "found in the list of properties managed by National Grid")
+
+    End Sub
+
+    Private Sub btn_CommitChanges_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_CommitChanges.Click
+
+        Dim ComandoUpdateDB As System.Data.OleDb.OleDbCommand
+        ComandoUpdateDB = New System.Data.OleDb.OleDbCommand
+
+
+        'Questo e' buono
+        'ComandoUpdateDB.CommandText = "UPDATE Site_Information SET Site_Name=" & "'" & Me.txtSiteName.Text & "'" & " ;  "
+
+        ' Verificare SQL per tutti
+        ComandoUpdateDB.CommandText = "UPDATE Site_Information SET Site_Name=" & "'" & Me.txtSiteName.Text & "'" & "," & _
+                                                "Site_Code = " & " '" & Me.txtSiteCode.Text & "'" & "," & _
+                                                "DirectionSlope = " & " '" & Me.cmbDirectionSlope.Text & "'" & " ;  "
+
+        'Ricordiamoci sempre che la connessione va aperta per il comando UPDATE
+        ComandoUpdateDB.Connection = con
+
+        'La stringa di concatenazione per update di vari campi
+        '"UPDATE Site_Information SET Site_Name=" & "'" & Me.txtSiteName.Text & "'" & "," & _
+        '                                    "Site_Code = " & " '" & Me.txtSiteCode.Text & "," & "'" & _
+        '                                    "DirectionSlope = " & " '" & Me.cmbDirectionSlope.Text & "'" & " ;  "
+
+
+        da.UpdateCommand = ComandoUpdateDB
+        da.UpdateCommand.ExecuteNonQuery()
+
+        
+    End Sub
+
+    Sub Connect()
+
+        Dim testoConnessione As String
+
+        testoConnessione = "Provider=Microsoft.Jet.OLEDB.4.0;Password="""";" & _
+                       "User ID=Admin;Data Source= " & nomefile & ";Mode=Sha" & _
+                       "re Deny None;Extended Properties="""";" & _
+                       "Jet OLEDB:System database="""";Jet OLEDB:Regis" & _
+                       "try Path="""";Jet OLEDB:Database Password="""";" & _
+                       "Jet OLEDB:Engine Type=5;Jet OLEDB:Dat" & _
+                       "abase Locking Mode=1;Jet OLEDB:Global Partial " & _
+                       "Bulk Ops=2;Jet OLEDB:Global Bulk T" & _
+                       "ransactions=1;Jet OLEDB:New Database " & _
+                       "Password="""";Jet OLEDB:Create System Databas" & _
+                       "e=False;Jet OLEDB:Encrypt Database=False;" & _
+                       "Jet OLEDB:Don't Copy Locale on Compact=" & _
+                       "False;Jet OLEDB:Compact Without Replica " & _
+                       "Repair=False;Jet OLEDB:SFP=False"
+
+        If contatore > 1 Then
+            Disconnect()
+            'Testo di connessione preparato sopra
+            con.ConnectionString = testoConnessione
+            contatore = contatore + 1
+            Site_Information = "Site_Information" & contatore
+        Else
+            con.ConnectionString = testoConnessione
+            contatore = contatore + 1
+            Site_Information = "Site_Information" & contatore
+        End If
+
+        Try
+            con.Open()
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+    End Sub
+
+    Sub Display()
+
+        sql = "SELECT * FROM Site_Information"
+        da = New OleDb.OleDbDataAdapter(sql, con)
+        da.Fill(ds, Site_Information)
+
+        CodiceSito = ds.Tables(Site_Information).Rows(0).Item(0)
+        NomeSito = ds.Tables(Site_Information).Rows(0).Item(1)
+        Address1 = ds.Tables(Site_Information).Rows(0).Item(2)
+        Address2 = ds.Tables(Site_Information).Rows(0).Item(3)
+        Town = ds.Tables(Site_Information).Rows(0).Item(4)
+        County = ds.Tables(Site_Information).Rows(0).Item(5)
+        PostCode = ds.Tables(Site_Information).Rows(0).Item(6)
+        LocalAuthority = ds.Tables(Site_Information).Rows(0).Item(7)
+        NG_Square = ds.Tables(Site_Information).Rows(0).Item(8)
+        easting = ds.Tables(Site_Information).Rows(0).Item(9)
+        northing = ds.Tables(Site_Information).Rows(0).Item(10)
+        SiteSize = ds.Tables(Site_Information).Rows(0).Item(11)
+        NPartToSite = ds.Tables(Site_Information).Rows(0).Item(12)
+        SiteGradient = ds.Tables(Site_Information).Rows(0).Item(13)
+        DirectionSlope = ds.Tables(Site_Information).Rows(0).Item(14)
+        GasPurification = ds.Tables(Site_Information).Rows(0).Item(19)
+
+        'verifica delle variabili piu' importanti
+        'Debug.WriteLine("Nome del Sito " & NomeSito)
+        'Debug.WriteLine("Codice del Sito " & CodiceSito)
+
+        'Dim numeroTab, k As Integer
+        'numeroTab = (TabControl1.TabCount)
+
+        'For k = 0 To numeroTab
+        'Me.txtSiteCode.Name(k).Text = CodiceSito
+        'Next
+
+        Me.txtSiteCode.Text = CodiceSito
+        Me.txtSiteCode1.Text = CodiceSito
+        Me.txtSiteCode2.Text = CodiceSito
+        Me.txtSiteCode3.Text = CodiceSito
+        Me.txtSiteCode4.Text = CodiceSito
+        Me.txtSiteCode5.Text = CodiceSito
+        Me.txtSiteCode6.Text = CodiceSito
+        Me.txtSiteCode7.Text = CodiceSito
+
+        Me.txtSiteName.Text = NomeSito
+        Me.TextAddress1.Text = Address1
+        Me.TextAddress2.Text = Address2
+        Me.txtTown.Text = Town
+        Me.txtCounty.Text = County
+        Me.txtPostcode.Text = PostCode
+        Me.txtLocalAuthority.Text = LocalAuthority
+        Me.cmbDirectionSlope.Text = DirectionSlope
+
+        'Controllo se il valore dei checkbox e' vero o falso
+        If GasPurification = True Then
+            Me.chkGasPurification.Checked = True
+        End If
+
+    End Sub
+
+    Sub Disconnect()
+        Try
+            con.Close()
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+    End Sub
+
+   
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        SiteBoundary.Show()
+    End Sub
+
+   
+    Private Sub tabSurfaceDetails_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tabSurfaceDetails.Click
+        'rdbSurfaceDetailsYes.Checked = True
+    End Sub
+
+    
+    Private Sub rdbSurfaceDetailsNo_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSurfaceDetailsNo.Click
+        Me.gpbPercentages.Enabled = False
+        Me.gpbPermeableImpermeableMaterial.Enabled = False
+        Me.gpbFloodingHistory.Enabled = False
+        Me.gpbNatureOfMaterial.Enabled = False
+        Me.gpbStandingWaterHistory.Enabled = False
+        Me.gpdCoveredOtherMaterial.Enabled = False
+    End Sub
+
+    Private Sub rdbSurfaceDetailsYes_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSurfaceDetailsYes.Click
+        Me.gpbPercentages.Enabled = True
+        Me.gpbPermeableImpermeableMaterial.Enabled = True
+        Me.gpbFloodingHistory.Enabled = True
+        Me.gpbNatureOfMaterial.Enabled = True
+        Me.gpbStandingWaterHistory.Enabled = True
+        Me.gpdCoveredOtherMaterial.Enabled = True
+    End Sub
+
+    
+
+    Private Sub RadioButton2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbMadeGroundYes.Click
+        Me.gpbMadeGroundContinuous.Enabled = True
+    End Sub
+
+    
+    Private Sub rdbMadeGroundNK_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbMadeGroundNK.Click
+        Me.gpbMadeGroundContinuous.Enabled = False
+    End Sub
+
+    Private Sub rdbMadeGroundNO_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbMadeGroundNO.Click
+        Me.gpbMadeGroundContinuous.Enabled = False
+    End Sub
+
+    Private Sub rdbSurfaceDetailsNo_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rdbSurfaceDetailsNo.CheckedChanged
+
+    End Sub
+
+    Private Sub RadioButton3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSuperficialDepositYes.Click
+
+        Me.gpbTypeOfDeposit.Enabled = True
+    End Sub
+
+    Private Sub rdbSuperficialDepositNO_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSuperficialDepositNO.Click
+        Me.gpbTypeOfDeposit.Enabled = False
+    End Sub
+
+    Private Sub rdbSuperficialDepositNK_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSuperficialDepositNK.Click
+        Me.gpbTypeOfDeposit.Enabled = False
+    End Sub
+
+    Private Sub chkGas_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkGas.Click
+        Me.txtGasCrossing.Enabled = True
+    End Sub
+
+    
+    Private Sub chkElectricity_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkElectricity.Click
+        Me.txtElectricityCrossing.Enabled = True
+    End Sub
+
+    Private Sub chkWater_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkWater.Click
+        Me.txtWaterCrossing.Enabled = True
+    End Sub
+
+    Private Sub chkSewers_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkSewers.Click
+        Me.txtSewerCrossing.Enabled = True
+    End Sub
+
+    Private Sub chkTelecom_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkTelecom.Click
+        Me.txtTelecomCrossing.Enabled = True
+    End Sub
+    Private Sub rdbUnderlyingAquiferYES_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbUnderlyingAquiferYES.Click
+        Me.gpbUnderlyingAquiferSourceContamination.Enabled = True
+    End Sub
+
+    Private Sub rdbUnderlyingAquiferNK_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbUnderlyingAquiferNK.Click
+        Me.gpbUnderlyingAquiferSourceContamination.Enabled = False
+    End Sub
+
+    Private Sub rdbUnderlyingAquiferNO_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbUnderlyingAquiferNO.Click
+        Me.gpbUnderlyingAquiferSourceContamination.Enabled = False
+    End Sub
+
+    Private Sub chkWaterBodies_CheckStateChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chkWaterBodies.CheckStateChanged
+        If chkWaterBodies.Checked = False Then
+            Me.gpbWaterBodies.Enabled = True
+        ElseIf chkWaterBodies.Checked = True Then
+            Me.gpbWaterBodies.Enabled = False
+        End If
+    End Sub
+
+    Private Sub TabSurfaceWaterEnvironment_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TabSurfaceWaterEnvironment.Enter
+        If Me.chkWaterBodies.Checked = False Then
+            Me.gpbWaterBodies.Enabled = True
+        ElseIf chkWaterBodies.Checked = True Then
+            Me.gpbWaterBodies.Enabled = False
+        End If
+    End Sub
+
+   
+    Private Sub chkSensitiveEnvironmentalTargets_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkSensitiveEnvironmentalTargets.CheckedChanged
+        If Me.chkSensitiveEnvironmentalTargets.Checked = False Then
+            Me.gpbSensitiveEnvironmentalTargets.Enabled = True
+        ElseIf Me.chkSensitiveEnvironmentalTargets.Checked = True Then
+            Me.gpbSensitiveEnvironmentalTargets.Enabled = False
+        End If
+    End Sub
+
+    Private Sub rdbSurfaceWaterUseYES_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rdbSurfaceWaterUseYES.CheckedChanged
+
+    End Sub
+
+    Private Sub rdbSurfaceWaterUseYES_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSurfaceWaterUseYES.Click
+        Me.gpbSurfaceWaterUseNearest.Enabled = True
+    End Sub
+
+    Private Sub rdbSurfaceWaterUseNO_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSurfaceWaterUseNO.Click
+
+        Me.gpbSurfaceWaterUseNearest.Enabled = False
+        
+    End Sub
+
+    Private Sub rdbSurfaceWaterUseNK_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles rdbSurfaceWaterUseNK.Click
+        Me.gpbSurfaceWaterUseNearest.Enabled = False
+    End Sub
+End Class

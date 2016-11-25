@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data_Archive" msprop:Generator_UserTableName="Data_Archive" msprop:Generator_RowDeletedName="Data_ArchiveRowDeleted" msprop:Generator_RowChangedName="Data_ArchiveRowChanged" msprop:Generator_RowClassName="Data_ArchiveRow" msprop:Generator_RowChangingName="Data_ArchiveRowChanging" msprop:Generator_RowEvArgName="Data_ArchiveRowChangeEvent" msprop:Generator_RowEvHandlerName="Data_ArchiveRowChangeEventHandler" msprop:Generator_TableClassName="Data_ArchiveDataTable" msprop:Generator_TableVarName="tableData_Archive" msprop:Generator_RowDeletingName="Data_ArchiveRowDeleting" msprop:Generator_TablePropName="Data_Archive">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Progr" msprop:Generator_UserColumnName="Progr" msprop:Generator_ColumnPropNameInRow="Progr" msprop:Generator_ColumnVarNameInTable="columnProgr" msprop:Generator_ColumnPropNameInTable="ProgrColumn" type="xs:short" />
+              <xs:element name="SiteCode" msprop:Generator_UserColumnName="SiteCode" msprop:Generator_ColumnPropNameInRow="SiteCode" msprop:Generator_ColumnVarNameInTable="columnSiteCode" msprop:Generator_ColumnPropNameInTable="SiteCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MentLocCode" msdata:Caption="SiteName" msprop:Generator_UserColumnName="MentLocCode" msprop:Generator_ColumnPropNameInRow="MentLocCode" msprop:Generator_ColumnVarNameInTable="columnMentLocCode" msprop:Generator_ColumnPropNameInTable="MentLocCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SiteAddress" msprop:Generator_UserColumnName="SiteAddress" msprop:Generator_ColumnPropNameInRow="SiteAddress" msprop:Generator_ColumnVarNameInTable="columnSiteAddress" msprop:Generator_ColumnPropNameInTable="SiteAddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SiteStatus" msprop:Generator_UserColumnName="SiteStatus" msprop:Generator_ColumnPropNameInRow="SiteStatus" msprop:Generator_ColumnVarNameInTable="columnSiteStatus" msprop:Generator_ColumnPropNameInTable="SiteStatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSPriority" msprop:Generator_UserColumnName="DSPriority" msprop:Generator_ColumnPropNameInRow="DSPriority" msprop:Generator_ColumnVarNameInTable="columnDSPriority" msprop:Generator_ColumnPropNameInTable="DSPriorityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="W_HPT_Score3" msprop:Generator_UserColumnName="W_HPT_Score3" msprop:Generator_ColumnPropNameInRow="W_HPT_Score3" msprop:Generator_ColumnVarNameInTable="columnW_HPT_Score3" msprop:Generator_ColumnPropNameInTable="W_HPT_Score3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="W_HPT_Score4" msprop:Generator_UserColumnName="W_HPT_Score4" msprop:Generator_ColumnPropNameInRow="W_HPT_Score4" msprop:Generator_ColumnVarNameInTable="columnW_HPT_Score4" msprop:Generator_ColumnPropNameInTable="W_HPT_Score4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="R_HPT_Score3" msprop:Generator_UserColumnName="R_HPT_Score3" msprop:Generator_ColumnPropNameInRow="R_HPT_Score3" msprop:Generator_ColumnVarNameInTable="columnR_HPT_Score3" msprop:Generator_ColumnPropNameInTable="R_HPT_Score3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Off-site_HS" msprop:Generator_UserColumnName="Off-site_HS" msprop:Generator_ColumnPropNameInRow="_Off_site_HS" msprop:Generator_ColumnVarNameInTable="_columnOff_site_HS" msprop:Generator_ColumnPropNameInTable="_Off_site_HSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="R_HPT_Score4" msprop:Generator_UserColumnName="R_HPT_Score4" msprop:Generator_ColumnPropNameInRow="R_HPT_Score4" msprop:Generator_ColumnVarNameInTable="columnR_HPT_Score4" msprop:Generator_ColumnPropNameInTable="R_HPT_Score4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="On-site_HS" msprop:Generator_UserColumnName="On-site_HS" msprop:Generator_ColumnPropNameInRow="_On_site_HS" msprop:Generator_ColumnVarNameInTable="_columnOn_site_HS" msprop:Generator_ColumnPropNameInTable="_On_site_HSColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FileLoc" msprop:Generator_UserColumnName="FileLoc" msprop:Generator_ColumnPropNameInRow="FileLoc" msprop:Generator_ColumnVarNameInTable="columnFileLoc" msprop:Generator_ColumnPropNameInTable="FileLocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Data_Archive" />
+      <xs:field xpath="mstns:Progr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

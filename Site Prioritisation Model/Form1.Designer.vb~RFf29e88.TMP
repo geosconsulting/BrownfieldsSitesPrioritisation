@@ -1,0 +1,3148 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container
+        Me.TabControl1 = New System.Windows.Forms.TabControl
+        Me.TabSiteInformation = New System.Windows.Forms.TabPage
+        Me.Label19 = New System.Windows.Forms.Label
+        Me.Label18 = New System.Windows.Forms.Label
+        Me.Label17 = New System.Windows.Forms.Label
+        Me.Label16 = New System.Windows.Forms.Label
+        Me.txtAnnualRainfall = New System.Windows.Forms.TextBox
+        Me.cmbSiteOccupation = New System.Windows.Forms.ComboBox
+        Me.cmbSiteGradient = New System.Windows.Forms.ComboBox
+        Me.Label15 = New System.Windows.Forms.Label
+        Me.txtNPartSize = New System.Windows.Forms.TextBox
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox
+        Me.Label14 = New System.Windows.Forms.Label
+        Me.TextBox6 = New System.Windows.Forms.TextBox
+        Me.Label13 = New System.Windows.Forms.Label
+        Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox
+        Me.chkCoalCarbonisationOnly = New System.Windows.Forms.CheckBox
+        Me.chkGasPurification = New System.Windows.Forms.CheckBox
+        Me.chkCoalGasification = New System.Windows.Forms.CheckBox
+        Me.Label10 = New System.Windows.Forms.Label
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.txtLocalAuthority = New System.Windows.Forms.TextBox
+        Me.Label7 = New System.Windows.Forms.Label
+        Me.txtPostcode = New System.Windows.Forms.TextBox
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.txtCounty = New System.Windows.Forms.TextBox
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.txtTown = New System.Windows.Forms.TextBox
+        Me.TextAddress2 = New System.Windows.Forms.TextBox
+        Me.TextAddress1 = New System.Windows.Forms.TextBox
+        Me.txtSiteName = New System.Windows.Forms.TextBox
+        Me.cmbDirectionSlope = New System.Windows.Forms.ComboBox
+        Me.txtSiteCode = New System.Windows.Forms.TextBox
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.lstNGSquare = New System.Windows.Forms.ListBox
+        Me.Label11 = New System.Windows.Forms.Label
+        Me.txtNorthing = New System.Windows.Forms.TextBox
+        Me.txtEasting = New System.Windows.Forms.TextBox
+        Me.Label12 = New System.Windows.Forms.Label
+        Me.tabSurfaceDetails = New System.Windows.Forms.TabPage
+        Me.gpbPermeableImpermeableMaterial = New System.Windows.Forms.GroupBox
+        Me.Label34 = New System.Windows.Forms.Label
+        Me.Label33 = New System.Windows.Forms.Label
+        Me.Label27 = New System.Windows.Forms.Label
+        Me.txtImpermeableMaterial = New System.Windows.Forms.TextBox
+        Me.txtPermeableMaterial = New System.Windows.Forms.TextBox
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox
+        Me.Label29 = New System.Windows.Forms.Label
+        Me.rdbSurfaceDetailsNo = New System.Windows.Forms.RadioButton
+        Me.rdbSurfaceDetailsYes = New System.Windows.Forms.RadioButton
+        Me.gpbStandingWaterHistory = New System.Windows.Forms.GroupBox
+        Me.Label32 = New System.Windows.Forms.Label
+        Me.rdbStandingWaterNO = New System.Windows.Forms.RadioButton
+        Me.rdbStandingWaterYes = New System.Windows.Forms.RadioButton
+        Me.gpbFloodingHistory = New System.Windows.Forms.GroupBox
+        Me.Label31 = New System.Windows.Forms.Label
+        Me.rdbFloodingNO = New System.Windows.Forms.RadioButton
+        Me.rdbFloodingYes = New System.Windows.Forms.RadioButton
+        Me.gpbNatureOfMaterial = New System.Windows.Forms.GroupBox
+        Me.Label30 = New System.Windows.Forms.Label
+        Me.rdbImpermeable = New System.Windows.Forms.RadioButton
+        Me.rdbPermeable = New System.Windows.Forms.RadioButton
+        Me.Label24 = New System.Windows.Forms.Label
+        Me.txtSiteCode1 = New System.Windows.Forms.TextBox
+        Me.gpbPercentages = New System.Windows.Forms.GroupBox
+        Me.Label23 = New System.Windows.Forms.Label
+        Me.Label22 = New System.Windows.Forms.Label
+        Me.Label21 = New System.Windows.Forms.Label
+        Me.Label20 = New System.Windows.Forms.Label
+        Me.Label26 = New System.Windows.Forms.Label
+        Me.txtBuildingStructure = New System.Windows.Forms.TextBox
+        Me.txtGravelLoose = New System.Windows.Forms.TextBox
+        Me.txtVegetationScrub = New System.Windows.Forms.TextBox
+        Me.txtExposedSoil = New System.Windows.Forms.TextBox
+        Me.txtHardstanding = New System.Windows.Forms.TextBox
+        Me.gpdCoveredOtherMaterial = New System.Windows.Forms.GroupBox
+        Me.Label25 = New System.Windows.Forms.Label
+        Me.txtCoveredOtherMaterial = New System.Windows.Forms.TextBox
+        Me.TabSubSurfaceConditions = New System.Windows.Forms.TabPage
+        Me.gpbBedrockGeology = New System.Windows.Forms.GroupBox
+        Me.txtSewerCrossing = New System.Windows.Forms.TextBox
+        Me.txtTelecomCrossing = New System.Windows.Forms.TextBox
+        Me.txtWaterCrossing = New System.Windows.Forms.TextBox
+        Me.txtElectricityCrossing = New System.Windows.Forms.TextBox
+        Me.txtGasCrossing = New System.Windows.Forms.TextBox
+        Me.Label44 = New System.Windows.Forms.Label
+        Me.Label43 = New System.Windows.Forms.Label
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox
+        Me.chkSewers = New System.Windows.Forms.CheckBox
+        Me.chkTelecom = New System.Windows.Forms.CheckBox
+        Me.chkElectricity = New System.Windows.Forms.CheckBox
+        Me.chkWater = New System.Windows.Forms.CheckBox
+        Me.chkGas = New System.Windows.Forms.CheckBox
+        Me.cmbBedrockGeology = New System.Windows.Forms.ComboBox
+        Me.Label41 = New System.Windows.Forms.Label
+        Me.gpbTypeOfDeposit = New System.Windows.Forms.GroupBox
+        Me.Label39 = New System.Windows.Forms.Label
+        Me.Label46 = New System.Windows.Forms.Label
+        Me.TextBox2 = New System.Windows.Forms.TextBox
+        Me.Label42 = New System.Windows.Forms.Label
+        Me.cmbTypeOfDeposit = New System.Windows.Forms.ComboBox
+        Me.Label40 = New System.Windows.Forms.Label
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton
+        Me.RadioButton9 = New System.Windows.Forms.RadioButton
+        Me.gpbSuperfialDeposits = New System.Windows.Forms.GroupBox
+        Me.rdbSuperficialDepositNK = New System.Windows.Forms.RadioButton
+        Me.Label38 = New System.Windows.Forms.Label
+        Me.rdbSuperficialDepositNO = New System.Windows.Forms.RadioButton
+        Me.rdbSuperficialDepositYes = New System.Windows.Forms.RadioButton
+        Me.GroupBox13 = New System.Windows.Forms.GroupBox
+        Me.cmbPerchedWaterTable = New System.Windows.Forms.ComboBox
+        Me.gpbMadeGroundContinuous = New System.Windows.Forms.GroupBox
+        Me.Label45 = New System.Windows.Forms.Label
+        Me.Label37 = New System.Windows.Forms.Label
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Label36 = New System.Windows.Forms.Label
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton
+        Me.gpbMadeGround = New System.Windows.Forms.GroupBox
+        Me.rdbMadeGroundNK = New System.Windows.Forms.RadioButton
+        Me.Label35 = New System.Windows.Forms.Label
+        Me.rdbMadeGroundNO = New System.Windows.Forms.RadioButton
+        Me.rdbMadeGroundYes = New System.Windows.Forms.RadioButton
+        Me.Label28 = New System.Windows.Forms.Label
+        Me.txtSiteCode2 = New System.Windows.Forms.TextBox
+        Me.TabGroundwaterAbstraction = New System.Windows.Forms.TabPage
+        Me.gpbSourceProtectionZone = New System.Windows.Forms.GroupBox
+        Me.rdbSourceProtectionZoneNK = New System.Windows.Forms.RadioButton
+        Me.Label54 = New System.Windows.Forms.Label
+        Me.rdbSourceProtectionZoneNO = New System.Windows.Forms.RadioButton
+        Me.rdbSourceProtectionZoneYES = New System.Windows.Forms.RadioButton
+        Me.gpbLateralFlow = New System.Windows.Forms.GroupBox
+        Me.rdbLateralFlowNK = New System.Windows.Forms.RadioButton
+        Me.Label53 = New System.Windows.Forms.Label
+        Me.rdbLateralFlowNO = New System.Windows.Forms.RadioButton
+        Me.rdbLateralFlowYES = New System.Windows.Forms.RadioButton
+        Me.gpbUnderlyingAquiferSourceContamination = New System.Windows.Forms.GroupBox
+        Me.rdbUnderlyingAquiferSourceContaminationNK = New System.Windows.Forms.RadioButton
+        Me.Label52 = New System.Windows.Forms.Label
+        Me.rdbUnderlyingAquiferSourceContaminationNO = New System.Windows.Forms.RadioButton
+        Me.rdbUnderlyingAquiferSourceContaminationYES = New System.Windows.Forms.RadioButton
+        Me.gpbUnderlyingAquifer = New System.Windows.Forms.GroupBox
+        Me.rdbUnderlyingAquiferNK = New System.Windows.Forms.RadioButton
+        Me.Label51 = New System.Windows.Forms.Label
+        Me.rdbUnderlyingAquiferNO = New System.Windows.Forms.RadioButton
+        Me.rdbUnderlyingAquiferYES = New System.Windows.Forms.RadioButton
+        Me.Label50 = New System.Windows.Forms.Label
+        Me.cmbDataSource = New System.Windows.Forms.ComboBox
+        Me.Label49 = New System.Windows.Forms.Label
+        Me.cmbNRAAquiferVulnerability = New System.Windows.Forms.ComboBox
+        Me.Label48 = New System.Windows.Forms.Label
+        Me.cmbNRAAquiferClassification = New System.Windows.Forms.ComboBox
+        Me.Label47 = New System.Windows.Forms.Label
+        Me.txtSiteCode3 = New System.Windows.Forms.TextBox
+        Me.TabSurfaceWaterEnvironment = New System.Windows.Forms.TabPage
+        Me.gpbSurfaceWaterUseNearest = New System.Windows.Forms.GroupBox
+        Me.Label70 = New System.Windows.Forms.Label
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
+        Me.gpbSurfaceWaterUse = New System.Windows.Forms.GroupBox
+        Me.rdbSurfaceWaterUseNK = New System.Windows.Forms.RadioButton
+        Me.rdbSurfaceWaterUseNO = New System.Windows.Forms.RadioButton
+        Me.rdbSurfaceWaterUseYES = New System.Windows.Forms.RadioButton
+        Me.Label68 = New System.Windows.Forms.Label
+        Me.Label64 = New System.Windows.Forms.Label
+        Me.chkSensitiveEnvironmentalTargets = New System.Windows.Forms.CheckBox
+        Me.gpbSensitiveEnvironmentalTargets = New System.Windows.Forms.GroupBox
+        Me.txtSensitiveEnvironmentalTargetsDistance3 = New System.Windows.Forms.TextBox
+        Me.cmbSensitiveEnvironmentalTargetsType3 = New System.Windows.Forms.ComboBox
+        Me.txtSensitiveEnvironmentalTargetsDistance2 = New System.Windows.Forms.TextBox
+        Me.cmbSensitiveEnvironmentalTargetsType2 = New System.Windows.Forms.ComboBox
+        Me.txtSensitiveEnvironmentalTargetsDistance1 = New System.Windows.Forms.TextBox
+        Me.Label65 = New System.Windows.Forms.Label
+        Me.Label67 = New System.Windows.Forms.Label
+        Me.cmbSensitiveEnvironmentalTargetsType1 = New System.Windows.Forms.ComboBox
+        Me.gpbWaterBodies = New System.Windows.Forms.GroupBox
+        Me.cmbFlowRate3 = New System.Windows.Forms.ComboBox
+        Me.cmbGQAWaterQuality3 = New System.Windows.Forms.ComboBox
+        Me.txtWaterBodyTypeDistance3 = New System.Windows.Forms.TextBox
+        Me.cmbWaterBodyType3 = New System.Windows.Forms.ComboBox
+        Me.cmbFlowRate2 = New System.Windows.Forms.ComboBox
+        Me.cmbGQAWaterQuality2 = New System.Windows.Forms.ComboBox
+        Me.txtWaterBodyTypeDistance2 = New System.Windows.Forms.TextBox
+        Me.cmbWaterBodyType2 = New System.Windows.Forms.ComboBox
+        Me.Label62 = New System.Windows.Forms.Label
+        Me.cmbFlowRate1 = New System.Windows.Forms.ComboBox
+        Me.cmbGQAWaterQuality1 = New System.Windows.Forms.ComboBox
+        Me.txtWaterBodyTypeDistance1 = New System.Windows.Forms.TextBox
+        Me.Label60 = New System.Windows.Forms.Label
+        Me.Label63 = New System.Windows.Forms.Label
+        Me.Label61 = New System.Windows.Forms.Label
+        Me.cmbWaterBodyType1 = New System.Windows.Forms.ComboBox
+        Me.Label59 = New System.Windows.Forms.Label
+        Me.chkWaterBodies = New System.Windows.Forms.CheckBox
+        Me.Label55 = New System.Windows.Forms.Label
+        Me.txtSiteCode4 = New System.Windows.Forms.TextBox
+        Me.TabContaminationPathways = New System.Windows.Forms.TabPage
+        Me.Label56 = New System.Windows.Forms.Label
+        Me.txtSiteCode5 = New System.Windows.Forms.TextBox
+        Me.TabReferences = New System.Windows.Forms.TabPage
+        Me.Label57 = New System.Windows.Forms.Label
+        Me.txtSiteCode6 = New System.Windows.Forms.TextBox
+        Me.TabYourDetails = New System.Windows.Forms.TabPage
+        Me.Label58 = New System.Windows.Forms.Label
+        Me.txtSiteCode7 = New System.Windows.Forms.TextBox
+        Me.btn_CommitChanges = New System.Windows.Forms.Button
+        Me.btn_Load = New System.Windows.Forms.Button
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
+        Me.btn_Exit = New System.Windows.Forms.Button
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog
+        Me.btn_SaveAs = New System.Windows.Forms.Button
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.btn_Access = New System.Windows.Forms.Button
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox
+        Me.ToolTipSiteCode = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton
+        Me.Label66 = New System.Windows.Forms.Label
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton
+        Me.Label69 = New System.Windows.Forms.Label
+        Me.Label71 = New System.Windows.Forms.Label
+        Me.Label72 = New System.Windows.Forms.Label
+        Me.Label73 = New System.Windows.Forms.Label
+        Me.Label74 = New System.Windows.Forms.Label
+        Me.Label75 = New System.Windows.Forms.Label
+        Me.Label76 = New System.Windows.Forms.Label
+        Me.Label77 = New System.Windows.Forms.Label
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown
+        Me.TabControl1.SuspendLayout()
+        Me.TabSiteInformation.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.tabSurfaceDetails.SuspendLayout()
+        Me.gpbPermeableImpermeableMaterial.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.gpbStandingWaterHistory.SuspendLayout()
+        Me.gpbFloodingHistory.SuspendLayout()
+        Me.gpbNatureOfMaterial.SuspendLayout()
+        Me.gpbPercentages.SuspendLayout()
+        Me.gpdCoveredOtherMaterial.SuspendLayout()
+        Me.TabSubSurfaceConditions.SuspendLayout()
+        Me.gpbBedrockGeology.SuspendLayout()
+        Me.gpbTypeOfDeposit.SuspendLayout()
+        Me.gpbSuperfialDeposits.SuspendLayout()
+        Me.GroupBox13.SuspendLayout()
+        Me.gpbMadeGroundContinuous.SuspendLayout()
+        Me.gpbMadeGround.SuspendLayout()
+        Me.TabGroundwaterAbstraction.SuspendLayout()
+        Me.gpbSourceProtectionZone.SuspendLayout()
+        Me.gpbLateralFlow.SuspendLayout()
+        Me.gpbUnderlyingAquiferSourceContamination.SuspendLayout()
+        Me.gpbUnderlyingAquifer.SuspendLayout()
+        Me.TabSurfaceWaterEnvironment.SuspendLayout()
+        Me.gpbSurfaceWaterUseNearest.SuspendLayout()
+        Me.gpbSurfaceWaterUse.SuspendLayout()
+        Me.gpbSensitiveEnvironmentalTargets.SuspendLayout()
+        Me.gpbWaterBodies.SuspendLayout()
+        Me.TabContaminationPathways.SuspendLayout()
+        Me.TabReferences.SuspendLayout()
+        Me.TabYourDetails.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabSiteInformation)
+        Me.TabControl1.Controls.Add(Me.tabSurfaceDetails)
+        Me.TabControl1.Controls.Add(Me.TabSubSurfaceConditions)
+        Me.TabControl1.Controls.Add(Me.TabGroundwaterAbstraction)
+        Me.TabControl1.Controls.Add(Me.TabSurfaceWaterEnvironment)
+        Me.TabControl1.Controls.Add(Me.TabContaminationPathways)
+        Me.TabControl1.Controls.Add(Me.TabReferences)
+        Me.TabControl1.Controls.Add(Me.TabYourDetails)
+        Me.TabControl1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl1.Location = New System.Drawing.Point(5, 2)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(670, 460)
+        Me.TabControl1.TabIndex = 0
+        '
+        'TabSiteInformation
+        '
+        Me.TabSiteInformation.Controls.Add(Me.Label19)
+        Me.TabSiteInformation.Controls.Add(Me.Label18)
+        Me.TabSiteInformation.Controls.Add(Me.Label17)
+        Me.TabSiteInformation.Controls.Add(Me.Label16)
+        Me.TabSiteInformation.Controls.Add(Me.txtAnnualRainfall)
+        Me.TabSiteInformation.Controls.Add(Me.cmbSiteOccupation)
+        Me.TabSiteInformation.Controls.Add(Me.cmbSiteGradient)
+        Me.TabSiteInformation.Controls.Add(Me.Label15)
+        Me.TabSiteInformation.Controls.Add(Me.txtNPartSize)
+        Me.TabSiteInformation.Controls.Add(Me.GroupBox6)
+        Me.TabSiteInformation.Controls.Add(Me.GroupBox5)
+        Me.TabSiteInformation.Controls.Add(Me.Label10)
+        Me.TabSiteInformation.Controls.Add(Me.Label8)
+        Me.TabSiteInformation.Controls.Add(Me.txtLocalAuthority)
+        Me.TabSiteInformation.Controls.Add(Me.Label7)
+        Me.TabSiteInformation.Controls.Add(Me.txtPostcode)
+        Me.TabSiteInformation.Controls.Add(Me.Label6)
+        Me.TabSiteInformation.Controls.Add(Me.txtCounty)
+        Me.TabSiteInformation.Controls.Add(Me.Label5)
+        Me.TabSiteInformation.Controls.Add(Me.Label3)
+        Me.TabSiteInformation.Controls.Add(Me.Label4)
+        Me.TabSiteInformation.Controls.Add(Me.Label2)
+        Me.TabSiteInformation.Controls.Add(Me.Label1)
+        Me.TabSiteInformation.Controls.Add(Me.txtTown)
+        Me.TabSiteInformation.Controls.Add(Me.TextAddress2)
+        Me.TabSiteInformation.Controls.Add(Me.TextAddress1)
+        Me.TabSiteInformation.Controls.Add(Me.txtSiteName)
+        Me.TabSiteInformation.Controls.Add(Me.cmbDirectionSlope)
+        Me.TabSiteInformation.Controls.Add(Me.txtSiteCode)
+        Me.TabSiteInformation.Controls.Add(Me.GroupBox3)
+        Me.TabSiteInformation.Location = New System.Drawing.Point(4, 22)
+        Me.TabSiteInformation.Name = "TabSiteInformation"
+        Me.TabSiteInformation.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabSiteInformation.Size = New System.Drawing.Size(662, 434)
+        Me.TabSiteInformation.TabIndex = 0
+        Me.TabSiteInformation.Text = "Site Information"
+        Me.TabSiteInformation.UseVisualStyleBackColor = True
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(224, 369)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(102, 16)
+        Me.Label19.TabIndex = 48
+        Me.Label19.Text = "Site Occupation"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(224, 268)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(114, 16)
+        Me.Label18.TabIndex = 47
+        Me.Label18.Text = "Direction of Slope"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(224, 219)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(85, 16)
+        Me.Label17.TabIndex = 46
+        Me.Label17.Text = "Site Gradient"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(224, 323)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(130, 16)
+        Me.Label16.TabIndex = 45
+        Me.Label16.Text = "Annual Rainfall (mm)"
+        '
+        'txtAnnualRainfall
+        '
+        Me.txtAnnualRainfall.Location = New System.Drawing.Point(226, 341)
+        Me.txtAnnualRainfall.Name = "txtAnnualRainfall"
+        Me.txtAnnualRainfall.Size = New System.Drawing.Size(173, 20)
+        Me.txtAnnualRainfall.TabIndex = 44
+        '
+        'cmbSiteOccupation
+        '
+        Me.cmbSiteOccupation.FormattingEnabled = True
+        Me.cmbSiteOccupation.Location = New System.Drawing.Point(227, 388)
+        Me.cmbSiteOccupation.Name = "cmbSiteOccupation"
+        Me.cmbSiteOccupation.Size = New System.Drawing.Size(184, 21)
+        Me.cmbSiteOccupation.TabIndex = 43
+        '
+        'cmbSiteGradient
+        '
+        Me.cmbSiteGradient.FormattingEnabled = True
+        Me.cmbSiteGradient.Location = New System.Drawing.Point(226, 238)
+        Me.cmbSiteGradient.Name = "cmbSiteGradient"
+        Me.cmbSiteGradient.Size = New System.Drawing.Size(184, 21)
+        Me.cmbSiteGradient.TabIndex = 42
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(225, 172)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(100, 16)
+        Me.Label15.TabIndex = 41
+        Me.Label15.Text = "N° of part to site"
+        '
+        'txtNPartSize
+        '
+        Me.txtNPartSize.Location = New System.Drawing.Point(227, 190)
+        Me.txtNPartSize.Name = "txtNPartSize"
+        Me.txtNPartSize.Size = New System.Drawing.Size(173, 20)
+        Me.txtNPartSize.TabIndex = 40
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.Label14)
+        Me.GroupBox6.Controls.Add(Me.TextBox6)
+        Me.GroupBox6.Controls.Add(Me.Label13)
+        Me.GroupBox6.Controls.Add(Me.TextBox5)
+        Me.GroupBox6.Controls.Add(Me.Label9)
+        Me.GroupBox6.Controls.Add(Me.TextBox4)
+        Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox6.Location = New System.Drawing.Point(433, 242)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(213, 182)
+        Me.GroupBox6.TabIndex = 39
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Other contaminative uses"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label14.Location = New System.Drawing.Point(21, 127)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(69, 16)
+        Me.Label14.TabIndex = 45
+        Me.Label14.Text = "Site Use 3"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.TextBox6.Location = New System.Drawing.Point(21, 145)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(173, 20)
+        Me.TextBox6.TabIndex = 44
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label13.Location = New System.Drawing.Point(21, 76)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(69, 16)
+        Me.Label13.TabIndex = 43
+        Me.Label13.Text = "Site Use 2"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.TextBox5.Location = New System.Drawing.Point(21, 94)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(173, 20)
+        Me.TextBox5.TabIndex = 42
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label9.Location = New System.Drawing.Point(21, 27)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(69, 16)
+        Me.Label9.TabIndex = 41
+        Me.Label9.Text = "Site Use 1"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.TextBox4.Location = New System.Drawing.Point(21, 45)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(173, 20)
+        Me.TextBox4.TabIndex = 40
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.CheckBox3)
+        Me.GroupBox5.Controls.Add(Me.CheckBox2)
+        Me.GroupBox5.Controls.Add(Me.CheckBox1)
+        Me.GroupBox5.Controls.Add(Me.chkCoalCarbonisationOnly)
+        Me.GroupBox5.Controls.Add(Me.chkGasPurification)
+        Me.GroupBox5.Controls.Add(Me.chkCoalGasification)
+        Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox5.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox5.Location = New System.Drawing.Point(433, 19)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(213, 217)
+        Me.GroupBox5.TabIndex = 32
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Previous gasworks uses"
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.CheckBox3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CheckBox3.Location = New System.Drawing.Point(31, 189)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(124, 17)
+        Me.CheckBox3.TabIndex = 38
+        Me.CheckBox3.Text = "Gas Purification Only"
+        Me.CheckBox3.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CheckBox2.Location = New System.Drawing.Point(31, 155)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(124, 17)
+        Me.CheckBox2.TabIndex = 37
+        Me.CheckBox2.Text = "Gas Purification Only"
+        Me.CheckBox2.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CheckBox1.Location = New System.Drawing.Point(31, 121)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(124, 17)
+        Me.CheckBox1.TabIndex = 36
+        Me.CheckBox1.Text = "Gas Purification Only"
+        Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'chkCoalCarbonisationOnly
+        '
+        Me.chkCoalCarbonisationOnly.AutoSize = True
+        Me.chkCoalCarbonisationOnly.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.chkCoalCarbonisationOnly.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.chkCoalCarbonisationOnly.Location = New System.Drawing.Point(31, 54)
+        Me.chkCoalCarbonisationOnly.Name = "chkCoalCarbonisationOnly"
+        Me.chkCoalCarbonisationOnly.Size = New System.Drawing.Size(138, 17)
+        Me.chkCoalCarbonisationOnly.TabIndex = 35
+        Me.chkCoalCarbonisationOnly.Text = "Coal Carbonisation Only"
+        Me.chkCoalCarbonisationOnly.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkCoalCarbonisationOnly.UseVisualStyleBackColor = True
+        '
+        'chkGasPurification
+        '
+        Me.chkGasPurification.AutoSize = True
+        Me.chkGasPurification.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.chkGasPurification.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.chkGasPurification.Location = New System.Drawing.Point(31, 87)
+        Me.chkGasPurification.Name = "chkGasPurification"
+        Me.chkGasPurification.Size = New System.Drawing.Size(124, 17)
+        Me.chkGasPurification.TabIndex = 33
+        Me.chkGasPurification.Text = "Gas Purification Only"
+        Me.chkGasPurification.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkGasPurification.UseVisualStyleBackColor = True
+        '
+        'chkCoalGasification
+        '
+        Me.chkCoalGasification.AutoSize = True
+        Me.chkCoalGasification.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.chkCoalGasification.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.chkCoalGasification.Location = New System.Drawing.Point(31, 23)
+        Me.chkCoalGasification.Name = "chkCoalGasification"
+        Me.chkCoalGasification.Size = New System.Drawing.Size(105, 17)
+        Me.chkCoalGasification.TabIndex = 34
+        Me.chkCoalGasification.Text = "Coal Gasification"
+        Me.chkCoalGasification.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkCoalGasification.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label10.Location = New System.Drawing.Point(236, 40)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 15)
+        Me.Label10.TabIndex = 25
+        Me.Label10.Text = "NG Square"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(20, 370)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(95, 16)
+        Me.Label8.TabIndex = 22
+        Me.Label8.Text = "Local Authority"
+        '
+        'txtLocalAuthority
+        '
+        Me.txtLocalAuthority.Location = New System.Drawing.Point(22, 388)
+        Me.txtLocalAuthority.Name = "txtLocalAuthority"
+        Me.txtLocalAuthority.Size = New System.Drawing.Size(173, 20)
+        Me.txtLocalAuthority.TabIndex = 21
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(21, 320)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(66, 16)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "Postcode"
+        '
+        'txtPostcode
+        '
+        Me.txtPostcode.Location = New System.Drawing.Point(23, 338)
+        Me.txtPostcode.Name = "txtPostcode"
+        Me.txtPostcode.Size = New System.Drawing.Size(173, 20)
+        Me.txtPostcode.TabIndex = 19
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(21, 270)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(49, 16)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "County"
+        '
+        'txtCounty
+        '
+        Me.txtCounty.Location = New System.Drawing.Point(23, 288)
+        Me.txtCounty.Name = "txtCounty"
+        Me.txtCounty.Size = New System.Drawing.Size(173, 20)
+        Me.txtCounty.TabIndex = 17
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(21, 220)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 16)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "Town"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(21, 170)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 16)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Address 2"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(21, 120)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(69, 16)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Address 1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(21, 70)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 16)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Site Name"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(21, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Site Code"
+        '
+        'txtTown
+        '
+        Me.txtTown.Location = New System.Drawing.Point(23, 238)
+        Me.txtTown.Name = "txtTown"
+        Me.txtTown.Size = New System.Drawing.Size(173, 20)
+        Me.txtTown.TabIndex = 9
+        '
+        'TextAddress2
+        '
+        Me.TextAddress2.Location = New System.Drawing.Point(23, 188)
+        Me.TextAddress2.Name = "TextAddress2"
+        Me.TextAddress2.Size = New System.Drawing.Size(173, 20)
+        Me.TextAddress2.TabIndex = 8
+        '
+        'TextAddress1
+        '
+        Me.TextAddress1.Location = New System.Drawing.Point(23, 138)
+        Me.TextAddress1.Name = "TextAddress1"
+        Me.TextAddress1.Size = New System.Drawing.Size(173, 20)
+        Me.TextAddress1.TabIndex = 7
+        '
+        'txtSiteName
+        '
+        Me.txtSiteName.Location = New System.Drawing.Point(23, 88)
+        Me.txtSiteName.Name = "txtSiteName"
+        Me.txtSiteName.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteName.TabIndex = 6
+        '
+        'cmbDirectionSlope
+        '
+        Me.cmbDirectionSlope.FormattingEnabled = True
+        Me.cmbDirectionSlope.Location = New System.Drawing.Point(226, 287)
+        Me.cmbDirectionSlope.Name = "cmbDirectionSlope"
+        Me.cmbDirectionSlope.Size = New System.Drawing.Size(184, 21)
+        Me.cmbDirectionSlope.TabIndex = 1
+        '
+        'txtSiteCode
+        '
+        Me.txtSiteCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSiteCode.ForeColor = System.Drawing.Color.Black
+        Me.txtSiteCode.Location = New System.Drawing.Point(23, 38)
+        Me.txtSiteCode.Name = "txtSiteCode"
+        Me.txtSiteCode.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode.TabIndex = 0
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.lstNGSquare)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.txtNorthing)
+        Me.GroupBox3.Controls.Add(Me.txtEasting)
+        Me.GroupBox3.Controls.Add(Me.Label12)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox3.Location = New System.Drawing.Point(227, 20)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(183, 134)
+        Me.GroupBox3.TabIndex = 31
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "OS Grid Reference"
+        '
+        'lstNGSquare
+        '
+        Me.lstNGSquare.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lstNGSquare.FormattingEnabled = True
+        Me.lstNGSquare.Location = New System.Drawing.Point(13, 38)
+        Me.lstNGSquare.Name = "lstNGSquare"
+        Me.lstNGSquare.Size = New System.Drawing.Size(61, 82)
+        Me.lstNGSquare.TabIndex = 49
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label11.Location = New System.Drawing.Point(101, 81)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(54, 15)
+        Me.Label11.TabIndex = 26
+        Me.Label11.Text = "Northing"
+        '
+        'txtNorthing
+        '
+        Me.txtNorthing.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtNorthing.Location = New System.Drawing.Point(91, 100)
+        Me.txtNorthing.Name = "txtNorthing"
+        Me.txtNorthing.Size = New System.Drawing.Size(72, 20)
+        Me.txtNorthing.TabIndex = 30
+        '
+        'txtEasting
+        '
+        Me.txtEasting.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtEasting.Location = New System.Drawing.Point(91, 48)
+        Me.txtEasting.Name = "txtEasting"
+        Me.txtEasting.Size = New System.Drawing.Size(72, 20)
+        Me.txtEasting.TabIndex = 29
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label12.Location = New System.Drawing.Point(102, 27)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(48, 15)
+        Me.Label12.TabIndex = 27
+        Me.Label12.Text = "Easting"
+        '
+        'tabSurfaceDetails
+        '
+        Me.tabSurfaceDetails.Controls.Add(Me.gpbPermeableImpermeableMaterial)
+        Me.tabSurfaceDetails.Controls.Add(Me.GroupBox10)
+        Me.tabSurfaceDetails.Controls.Add(Me.gpbStandingWaterHistory)
+        Me.tabSurfaceDetails.Controls.Add(Me.gpbFloodingHistory)
+        Me.tabSurfaceDetails.Controls.Add(Me.gpbNatureOfMaterial)
+        Me.tabSurfaceDetails.Controls.Add(Me.Label24)
+        Me.tabSurfaceDetails.Controls.Add(Me.txtSiteCode1)
+        Me.tabSurfaceDetails.Controls.Add(Me.gpbPercentages)
+        Me.tabSurfaceDetails.Controls.Add(Me.gpdCoveredOtherMaterial)
+        Me.tabSurfaceDetails.Location = New System.Drawing.Point(4, 22)
+        Me.tabSurfaceDetails.Name = "tabSurfaceDetails"
+        Me.tabSurfaceDetails.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabSurfaceDetails.Size = New System.Drawing.Size(662, 434)
+        Me.tabSurfaceDetails.TabIndex = 1
+        Me.tabSurfaceDetails.Text = "Surface Details"
+        Me.tabSurfaceDetails.UseVisualStyleBackColor = True
+        '
+        'gpbPermeableImpermeableMaterial
+        '
+        Me.gpbPermeableImpermeableMaterial.Controls.Add(Me.Label34)
+        Me.gpbPermeableImpermeableMaterial.Controls.Add(Me.Label33)
+        Me.gpbPermeableImpermeableMaterial.Controls.Add(Me.Label27)
+        Me.gpbPermeableImpermeableMaterial.Controls.Add(Me.txtImpermeableMaterial)
+        Me.gpbPermeableImpermeableMaterial.Controls.Add(Me.txtPermeableMaterial)
+        Me.gpbPermeableImpermeableMaterial.Location = New System.Drawing.Point(72, 358)
+        Me.gpbPermeableImpermeableMaterial.Name = "gpbPermeableImpermeableMaterial"
+        Me.gpbPermeableImpermeableMaterial.Size = New System.Drawing.Size(468, 67)
+        Me.gpbPermeableImpermeableMaterial.TabIndex = 45
+        Me.gpbPermeableImpermeableMaterial.TabStop = False
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(362, 40)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(88, 16)
+        Me.Label34.TabIndex = 43
+        Me.Label34.Text = "impermeable"
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(362, 14)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(74, 16)
+        Me.Label33.TabIndex = 42
+        Me.Label33.Text = "permeable"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(7, 20)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(241, 32)
+        Me.Label27.TabIndex = 41
+        Me.Label27.Text = "What % of the site is covered by " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "permeable and impermeable material?"
+        '
+        'txtImpermeableMaterial
+        '
+        Me.txtImpermeableMaterial.Location = New System.Drawing.Point(289, 39)
+        Me.txtImpermeableMaterial.Name = "txtImpermeableMaterial"
+        Me.txtImpermeableMaterial.Size = New System.Drawing.Size(65, 20)
+        Me.txtImpermeableMaterial.TabIndex = 36
+        '
+        'txtPermeableMaterial
+        '
+        Me.txtPermeableMaterial.Location = New System.Drawing.Point(289, 13)
+        Me.txtPermeableMaterial.Name = "txtPermeableMaterial"
+        Me.txtPermeableMaterial.Size = New System.Drawing.Size(65, 20)
+        Me.txtPermeableMaterial.TabIndex = 34
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.Controls.Add(Me.Label29)
+        Me.GroupBox10.Controls.Add(Me.rdbSurfaceDetailsNo)
+        Me.GroupBox10.Controls.Add(Me.rdbSurfaceDetailsYes)
+        Me.GroupBox10.Location = New System.Drawing.Point(306, 13)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(325, 65)
+        Me.GroupBox10.TabIndex = 30
+        Me.GroupBox10.TabStop = False
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(9, 19)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(183, 32)
+        Me.Label29.TabIndex = 42
+        Me.Label29.Text = "Is there any information for the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "surface details for this site? "
+        '
+        'rdbSurfaceDetailsNo
+        '
+        Me.rdbSurfaceDetailsNo.AutoSize = True
+        Me.rdbSurfaceDetailsNo.Location = New System.Drawing.Point(240, 40)
+        Me.rdbSurfaceDetailsNo.Name = "rdbSurfaceDetailsNo"
+        Me.rdbSurfaceDetailsNo.Size = New System.Drawing.Size(41, 17)
+        Me.rdbSurfaceDetailsNo.TabIndex = 1
+        Me.rdbSurfaceDetailsNo.TabStop = True
+        Me.rdbSurfaceDetailsNo.Text = "No"
+        Me.rdbSurfaceDetailsNo.UseVisualStyleBackColor = True
+        '
+        'rdbSurfaceDetailsYes
+        '
+        Me.rdbSurfaceDetailsYes.AutoSize = True
+        Me.rdbSurfaceDetailsYes.Location = New System.Drawing.Point(240, 15)
+        Me.rdbSurfaceDetailsYes.Name = "rdbSurfaceDetailsYes"
+        Me.rdbSurfaceDetailsYes.Size = New System.Drawing.Size(46, 17)
+        Me.rdbSurfaceDetailsYes.TabIndex = 0
+        Me.rdbSurfaceDetailsYes.TabStop = True
+        Me.rdbSurfaceDetailsYes.Text = "Yes"
+        Me.rdbSurfaceDetailsYes.UseVisualStyleBackColor = True
+        '
+        'gpbStandingWaterHistory
+        '
+        Me.gpbStandingWaterHistory.Controls.Add(Me.Label32)
+        Me.gpbStandingWaterHistory.Controls.Add(Me.rdbStandingWaterNO)
+        Me.gpbStandingWaterHistory.Controls.Add(Me.rdbStandingWaterYes)
+        Me.gpbStandingWaterHistory.Location = New System.Drawing.Point(306, 290)
+        Me.gpbStandingWaterHistory.Name = "gpbStandingWaterHistory"
+        Me.gpbStandingWaterHistory.Size = New System.Drawing.Size(325, 65)
+        Me.gpbStandingWaterHistory.TabIndex = 31
+        Me.gpbStandingWaterHistory.TabStop = False
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(7, 20)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(205, 32)
+        Me.Label32.TabIndex = 44
+        Me.Label32.Text = "Has there been any standing" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "water on the site in recent history?"
+        '
+        'rdbStandingWaterNO
+        '
+        Me.rdbStandingWaterNO.AutoSize = True
+        Me.rdbStandingWaterNO.Location = New System.Drawing.Point(228, 40)
+        Me.rdbStandingWaterNO.Name = "rdbStandingWaterNO"
+        Me.rdbStandingWaterNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbStandingWaterNO.TabIndex = 1
+        Me.rdbStandingWaterNO.TabStop = True
+        Me.rdbStandingWaterNO.Text = "No"
+        Me.rdbStandingWaterNO.UseVisualStyleBackColor = True
+        '
+        'rdbStandingWaterYes
+        '
+        Me.rdbStandingWaterYes.AutoSize = True
+        Me.rdbStandingWaterYes.Location = New System.Drawing.Point(228, 15)
+        Me.rdbStandingWaterYes.Name = "rdbStandingWaterYes"
+        Me.rdbStandingWaterYes.Size = New System.Drawing.Size(46, 17)
+        Me.rdbStandingWaterYes.TabIndex = 0
+        Me.rdbStandingWaterYes.TabStop = True
+        Me.rdbStandingWaterYes.Text = "Yes"
+        Me.rdbStandingWaterYes.UseVisualStyleBackColor = True
+        '
+        'gpbFloodingHistory
+        '
+        Me.gpbFloodingHistory.Controls.Add(Me.Label31)
+        Me.gpbFloodingHistory.Controls.Add(Me.rdbFloodingNO)
+        Me.gpbFloodingHistory.Controls.Add(Me.rdbFloodingYes)
+        Me.gpbFloodingHistory.Location = New System.Drawing.Point(306, 221)
+        Me.gpbFloodingHistory.Name = "gpbFloodingHistory"
+        Me.gpbFloodingHistory.Size = New System.Drawing.Size(325, 65)
+        Me.gpbFloodingHistory.TabIndex = 30
+        Me.gpbFloodingHistory.TabStop = False
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(6, 21)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(176, 32)
+        Me.Label31.TabIndex = 43
+        Me.Label31.Text = "Has there been any flooding" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "on the site in recent history?"
+        '
+        'rdbFloodingNO
+        '
+        Me.rdbFloodingNO.AutoSize = True
+        Me.rdbFloodingNO.Location = New System.Drawing.Point(228, 40)
+        Me.rdbFloodingNO.Name = "rdbFloodingNO"
+        Me.rdbFloodingNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbFloodingNO.TabIndex = 1
+        Me.rdbFloodingNO.TabStop = True
+        Me.rdbFloodingNO.Text = "No"
+        Me.rdbFloodingNO.UseVisualStyleBackColor = True
+        '
+        'rdbFloodingYes
+        '
+        Me.rdbFloodingYes.AutoSize = True
+        Me.rdbFloodingYes.Location = New System.Drawing.Point(228, 15)
+        Me.rdbFloodingYes.Name = "rdbFloodingYes"
+        Me.rdbFloodingYes.Size = New System.Drawing.Size(46, 17)
+        Me.rdbFloodingYes.TabIndex = 0
+        Me.rdbFloodingYes.TabStop = True
+        Me.rdbFloodingYes.Text = "Yes"
+        Me.rdbFloodingYes.UseVisualStyleBackColor = True
+        '
+        'gpbNatureOfMaterial
+        '
+        Me.gpbNatureOfMaterial.Controls.Add(Me.Label30)
+        Me.gpbNatureOfMaterial.Controls.Add(Me.rdbImpermeable)
+        Me.gpbNatureOfMaterial.Controls.Add(Me.rdbPermeable)
+        Me.gpbNatureOfMaterial.Location = New System.Drawing.Point(306, 153)
+        Me.gpbNatureOfMaterial.Name = "gpbNatureOfMaterial"
+        Me.gpbNatureOfMaterial.Size = New System.Drawing.Size(325, 65)
+        Me.gpbNatureOfMaterial.TabIndex = 29
+        Me.gpbNatureOfMaterial.TabStop = False
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(6, 16)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(157, 32)
+        Me.Label30.TabIndex = 42
+        Me.Label30.Text = "What is the overall nature" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "of this material?"
+        '
+        'rdbImpermeable
+        '
+        Me.rdbImpermeable.AutoSize = True
+        Me.rdbImpermeable.Location = New System.Drawing.Point(228, 41)
+        Me.rdbImpermeable.Name = "rdbImpermeable"
+        Me.rdbImpermeable.Size = New System.Drawing.Size(96, 17)
+        Me.rdbImpermeable.TabIndex = 1
+        Me.rdbImpermeable.TabStop = True
+        Me.rdbImpermeable.Text = "Impermeable"
+        Me.rdbImpermeable.UseVisualStyleBackColor = True
+        '
+        'rdbPermeable
+        '
+        Me.rdbPermeable.AutoSize = True
+        Me.rdbPermeable.Location = New System.Drawing.Point(228, 16)
+        Me.rdbPermeable.Name = "rdbPermeable"
+        Me.rdbPermeable.Size = New System.Drawing.Size(84, 17)
+        Me.rdbPermeable.TabIndex = 0
+        Me.rdbPermeable.TabStop = True
+        Me.rdbPermeable.Text = "Permeable"
+        Me.rdbPermeable.UseVisualStyleBackColor = True
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(35, 16)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(67, 16)
+        Me.Label24.TabIndex = 22
+        Me.Label24.Text = "Site Code"
+        '
+        'txtSiteCode1
+        '
+        Me.txtSiteCode1.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSiteCode1.Location = New System.Drawing.Point(37, 34)
+        Me.txtSiteCode1.Name = "txtSiteCode1"
+        Me.txtSiteCode1.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode1.TabIndex = 17
+        '
+        'gpbPercentages
+        '
+        Me.gpbPercentages.Controls.Add(Me.Label23)
+        Me.gpbPercentages.Controls.Add(Me.Label22)
+        Me.gpbPercentages.Controls.Add(Me.Label21)
+        Me.gpbPercentages.Controls.Add(Me.Label20)
+        Me.gpbPercentages.Controls.Add(Me.Label26)
+        Me.gpbPercentages.Controls.Add(Me.txtBuildingStructure)
+        Me.gpbPercentages.Controls.Add(Me.txtGravelLoose)
+        Me.gpbPercentages.Controls.Add(Me.txtVegetationScrub)
+        Me.gpbPercentages.Controls.Add(Me.txtExposedSoil)
+        Me.gpbPercentages.Controls.Add(Me.txtHardstanding)
+        Me.gpbPercentages.Location = New System.Drawing.Point(14, 82)
+        Me.gpbPercentages.Name = "gpbPercentages"
+        Me.gpbPercentages.Size = New System.Drawing.Size(282, 273)
+        Me.gpbPercentages.TabIndex = 44
+        Me.gpbPercentages.TabStop = False
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(7, 225)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(179, 32)
+        Me.Label23.TabIndex = 50
+        Me.Label23.Text = "What % of the site is covered" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "by gravel/loose fill?"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(7, 177)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(179, 32)
+        Me.Label22.TabIndex = 49
+        Me.Label22.Text = "What % of the site is covered" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "by vegetation/scrub?"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(7, 125)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(179, 32)
+        Me.Label21.TabIndex = 48
+        Me.Label21.Text = "What % of the site is covered" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "by exposed soil?"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(7, 75)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(179, 32)
+        Me.Label20.TabIndex = 47
+        Me.Label20.Text = "What % of the site is covered" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "by Hardstanding?"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(7, 22)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(179, 32)
+        Me.Label26.TabIndex = 46
+        Me.Label26.Text = "What % of the site is covered" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "by buildings/structures?"
+        '
+        'txtBuildingStructure
+        '
+        Me.txtBuildingStructure.Location = New System.Drawing.Point(196, 32)
+        Me.txtBuildingStructure.Name = "txtBuildingStructure"
+        Me.txtBuildingStructure.Size = New System.Drawing.Size(79, 20)
+        Me.txtBuildingStructure.TabIndex = 45
+        '
+        'txtGravelLoose
+        '
+        Me.txtGravelLoose.Location = New System.Drawing.Point(197, 237)
+        Me.txtGravelLoose.Name = "txtGravelLoose"
+        Me.txtGravelLoose.Size = New System.Drawing.Size(79, 20)
+        Me.txtGravelLoose.TabIndex = 44
+        '
+        'txtVegetationScrub
+        '
+        Me.txtVegetationScrub.Location = New System.Drawing.Point(197, 187)
+        Me.txtVegetationScrub.Name = "txtVegetationScrub"
+        Me.txtVegetationScrub.Size = New System.Drawing.Size(79, 20)
+        Me.txtVegetationScrub.TabIndex = 43
+        '
+        'txtExposedSoil
+        '
+        Me.txtExposedSoil.Location = New System.Drawing.Point(197, 137)
+        Me.txtExposedSoil.Name = "txtExposedSoil"
+        Me.txtExposedSoil.Size = New System.Drawing.Size(79, 20)
+        Me.txtExposedSoil.TabIndex = 42
+        '
+        'txtHardstanding
+        '
+        Me.txtHardstanding.Location = New System.Drawing.Point(197, 87)
+        Me.txtHardstanding.Name = "txtHardstanding"
+        Me.txtHardstanding.Size = New System.Drawing.Size(79, 20)
+        Me.txtHardstanding.TabIndex = 41
+        '
+        'gpdCoveredOtherMaterial
+        '
+        Me.gpdCoveredOtherMaterial.Controls.Add(Me.Label25)
+        Me.gpdCoveredOtherMaterial.Controls.Add(Me.txtCoveredOtherMaterial)
+        Me.gpdCoveredOtherMaterial.Location = New System.Drawing.Point(306, 84)
+        Me.gpdCoveredOtherMaterial.Name = "gpdCoveredOtherMaterial"
+        Me.gpdCoveredOtherMaterial.Size = New System.Drawing.Size(325, 65)
+        Me.gpdCoveredOtherMaterial.TabIndex = 43
+        Me.gpdCoveredOtherMaterial.TabStop = False
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(9, 8)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(170, 48)
+        Me.Label25.TabIndex = 30
+        Me.Label25.Text = "What % of the site is " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "covered by other material? " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(include Surface Deposits)"
+        '
+        'txtCoveredOtherMaterial
+        '
+        Me.txtCoveredOtherMaterial.Location = New System.Drawing.Point(225, 22)
+        Me.txtCoveredOtherMaterial.Name = "txtCoveredOtherMaterial"
+        Me.txtCoveredOtherMaterial.Size = New System.Drawing.Size(91, 20)
+        Me.txtCoveredOtherMaterial.TabIndex = 29
+        '
+        'TabSubSurfaceConditions
+        '
+        Me.TabSubSurfaceConditions.Controls.Add(Me.gpbBedrockGeology)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.gpbTypeOfDeposit)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.gpbSuperfialDeposits)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.GroupBox13)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.gpbMadeGroundContinuous)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.gpbMadeGround)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.Label28)
+        Me.TabSubSurfaceConditions.Controls.Add(Me.txtSiteCode2)
+        Me.TabSubSurfaceConditions.Location = New System.Drawing.Point(4, 22)
+        Me.TabSubSurfaceConditions.Name = "TabSubSurfaceConditions"
+        Me.TabSubSurfaceConditions.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabSubSurfaceConditions.Size = New System.Drawing.Size(662, 434)
+        Me.TabSubSurfaceConditions.TabIndex = 2
+        Me.TabSubSurfaceConditions.Text = "Sub-Surface Conditions"
+        Me.TabSubSurfaceConditions.UseVisualStyleBackColor = True
+        '
+        'gpbBedrockGeology
+        '
+        Me.gpbBedrockGeology.Controls.Add(Me.txtSewerCrossing)
+        Me.gpbBedrockGeology.Controls.Add(Me.txtTelecomCrossing)
+        Me.gpbBedrockGeology.Controls.Add(Me.txtWaterCrossing)
+        Me.gpbBedrockGeology.Controls.Add(Me.txtElectricityCrossing)
+        Me.gpbBedrockGeology.Controls.Add(Me.txtGasCrossing)
+        Me.gpbBedrockGeology.Controls.Add(Me.Label44)
+        Me.gpbBedrockGeology.Controls.Add(Me.Label43)
+        Me.gpbBedrockGeology.Controls.Add(Me.CheckBox4)
+        Me.gpbBedrockGeology.Controls.Add(Me.chkSewers)
+        Me.gpbBedrockGeology.Controls.Add(Me.chkTelecom)
+        Me.gpbBedrockGeology.Controls.Add(Me.chkElectricity)
+        Me.gpbBedrockGeology.Controls.Add(Me.chkWater)
+        Me.gpbBedrockGeology.Controls.Add(Me.chkGas)
+        Me.gpbBedrockGeology.Controls.Add(Me.cmbBedrockGeology)
+        Me.gpbBedrockGeology.Controls.Add(Me.Label41)
+        Me.gpbBedrockGeology.Location = New System.Drawing.Point(338, 7)
+        Me.gpbBedrockGeology.Name = "gpbBedrockGeology"
+        Me.gpbBedrockGeology.Size = New System.Drawing.Size(312, 266)
+        Me.gpbBedrockGeology.TabIndex = 45
+        Me.gpbBedrockGeology.TabStop = False
+        Me.gpbBedrockGeology.Text = "Bedrock Geology"
+        '
+        'txtSewerCrossing
+        '
+        Me.txtSewerCrossing.Enabled = False
+        Me.txtSewerCrossing.Location = New System.Drawing.Point(165, 207)
+        Me.txtSewerCrossing.Name = "txtSewerCrossing"
+        Me.txtSewerCrossing.Size = New System.Drawing.Size(65, 20)
+        Me.txtSewerCrossing.TabIndex = 53
+        '
+        'txtTelecomCrossing
+        '
+        Me.txtTelecomCrossing.Enabled = False
+        Me.txtTelecomCrossing.Location = New System.Drawing.Point(165, 178)
+        Me.txtTelecomCrossing.Name = "txtTelecomCrossing"
+        Me.txtTelecomCrossing.Size = New System.Drawing.Size(65, 20)
+        Me.txtTelecomCrossing.TabIndex = 52
+        '
+        'txtWaterCrossing
+        '
+        Me.txtWaterCrossing.Enabled = False
+        Me.txtWaterCrossing.Location = New System.Drawing.Point(165, 149)
+        Me.txtWaterCrossing.Name = "txtWaterCrossing"
+        Me.txtWaterCrossing.Size = New System.Drawing.Size(65, 20)
+        Me.txtWaterCrossing.TabIndex = 51
+        '
+        'txtElectricityCrossing
+        '
+        Me.txtElectricityCrossing.Enabled = False
+        Me.txtElectricityCrossing.Location = New System.Drawing.Point(165, 120)
+        Me.txtElectricityCrossing.Name = "txtElectricityCrossing"
+        Me.txtElectricityCrossing.Size = New System.Drawing.Size(65, 20)
+        Me.txtElectricityCrossing.TabIndex = 50
+        '
+        'txtGasCrossing
+        '
+        Me.txtGasCrossing.Enabled = False
+        Me.txtGasCrossing.Location = New System.Drawing.Point(165, 91)
+        Me.txtGasCrossing.Name = "txtGasCrossing"
+        Me.txtGasCrossing.Size = New System.Drawing.Size(65, 20)
+        Me.txtGasCrossing.TabIndex = 48
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(127, 69)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(153, 16)
+        Me.Label44.TabIndex = 49
+        Me.Label44.Text = "N of boundary crossings"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(39, 69)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(54, 16)
+        Me.Label43.TabIndex = 47
+        Me.Label43.Text = "Service"
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox4.Location = New System.Drawing.Point(77, 238)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CheckBox4.Size = New System.Drawing.Size(95, 17)
+        Me.CheckBox4.TabIndex = 48
+        Me.CheckBox4.Text = "No Information"
+        Me.CheckBox4.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'chkSewers
+        '
+        Me.chkSewers.AutoSize = True
+        Me.chkSewers.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkSewers.Location = New System.Drawing.Point(29, 209)
+        Me.chkSewers.Name = "chkSewers"
+        Me.chkSewers.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.chkSewers.Size = New System.Drawing.Size(61, 17)
+        Me.chkSewers.TabIndex = 47
+        Me.chkSewers.Text = "Sewers"
+        Me.chkSewers.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkSewers.UseVisualStyleBackColor = True
+        '
+        'chkTelecom
+        '
+        Me.chkTelecom.AutoSize = True
+        Me.chkTelecom.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkTelecom.Location = New System.Drawing.Point(23, 180)
+        Me.chkTelecom.Name = "chkTelecom"
+        Me.chkTelecom.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.chkTelecom.Size = New System.Drawing.Size(67, 17)
+        Me.chkTelecom.TabIndex = 46
+        Me.chkTelecom.Text = "Telecom"
+        Me.chkTelecom.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkTelecom.UseVisualStyleBackColor = True
+        '
+        'chkElectricity
+        '
+        Me.chkElectricity.AutoSize = True
+        Me.chkElectricity.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkElectricity.Location = New System.Drawing.Point(19, 122)
+        Me.chkElectricity.Name = "chkElectricity"
+        Me.chkElectricity.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.chkElectricity.Size = New System.Drawing.Size(71, 17)
+        Me.chkElectricity.TabIndex = 45
+        Me.chkElectricity.Text = "Electricity"
+        Me.chkElectricity.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkElectricity.UseVisualStyleBackColor = True
+        '
+        'chkWater
+        '
+        Me.chkWater.AutoSize = True
+        Me.chkWater.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkWater.Location = New System.Drawing.Point(35, 151)
+        Me.chkWater.Name = "chkWater"
+        Me.chkWater.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.chkWater.Size = New System.Drawing.Size(55, 17)
+        Me.chkWater.TabIndex = 43
+        Me.chkWater.Text = "Water"
+        Me.chkWater.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkWater.UseVisualStyleBackColor = True
+        '
+        'chkGas
+        '
+        Me.chkGas.AutoSize = True
+        Me.chkGas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkGas.Location = New System.Drawing.Point(45, 94)
+        Me.chkGas.Name = "chkGas"
+        Me.chkGas.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.chkGas.Size = New System.Drawing.Size(45, 17)
+        Me.chkGas.TabIndex = 44
+        Me.chkGas.Text = "Gas"
+        Me.chkGas.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.chkGas.UseVisualStyleBackColor = True
+        '
+        'cmbBedrockGeology
+        '
+        Me.cmbBedrockGeology.FormattingEnabled = True
+        Me.cmbBedrockGeology.Location = New System.Drawing.Point(47, 17)
+        Me.cmbBedrockGeology.Name = "cmbBedrockGeology"
+        Me.cmbBedrockGeology.Size = New System.Drawing.Size(239, 21)
+        Me.cmbBedrockGeology.TabIndex = 1
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label41.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label41.Location = New System.Drawing.Point(8, 47)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(133, 13)
+        Me.Label41.TabIndex = 42
+        Me.Label41.Text = "Underground Services"
+        '
+        'gpbTypeOfDeposit
+        '
+        Me.gpbTypeOfDeposit.Controls.Add(Me.Label39)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.Label46)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.TextBox2)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.Label42)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.cmbTypeOfDeposit)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.Label40)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.RadioButton8)
+        Me.gpbTypeOfDeposit.Controls.Add(Me.RadioButton9)
+        Me.gpbTypeOfDeposit.Enabled = False
+        Me.gpbTypeOfDeposit.Location = New System.Drawing.Point(338, 279)
+        Me.gpbTypeOfDeposit.Name = "gpbTypeOfDeposit"
+        Me.gpbTypeOfDeposit.Size = New System.Drawing.Size(312, 149)
+        Me.gpbTypeOfDeposit.TabIndex = 47
+        Me.gpbTypeOfDeposit.TabStop = False
+        Me.gpbTypeOfDeposit.Text = "If there are superficial deposits...."
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(267, 121)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(45, 15)
+        Me.Label39.TabIndex = 50
+        Me.Label39.Text = "metres"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(3, 121)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(199, 16)
+        Me.Label46.TabIndex = 49
+        Me.Label46.Text = "What is the maximum thickness?"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(202, 119)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(65, 20)
+        Me.TextBox2.TabIndex = 48
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(12, 19)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(107, 16)
+        Me.Label42.TabIndex = 47
+        Me.Label42.Text = "Type of Deposit:"
+        '
+        'cmbTypeOfDeposit
+        '
+        Me.cmbTypeOfDeposit.FormattingEnabled = True
+        Me.cmbTypeOfDeposit.Location = New System.Drawing.Point(14, 40)
+        Me.cmbTypeOfDeposit.Name = "cmbTypeOfDeposit"
+        Me.cmbTypeOfDeposit.Size = New System.Drawing.Size(195, 21)
+        Me.cmbTypeOfDeposit.TabIndex = 1
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(12, 72)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(134, 32)
+        Me.Label40.TabIndex = 42
+        Me.Label40.Text = "Are the superficial " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "deposits continuous?"
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.Location = New System.Drawing.Point(228, 90)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(41, 17)
+        Me.RadioButton8.TabIndex = 1
+        Me.RadioButton8.TabStop = True
+        Me.RadioButton8.Text = "No"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
+        'RadioButton9
+        '
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.Location = New System.Drawing.Point(228, 66)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(46, 17)
+        Me.RadioButton9.TabIndex = 0
+        Me.RadioButton9.TabStop = True
+        Me.RadioButton9.Text = "Yes"
+        Me.RadioButton9.UseVisualStyleBackColor = True
+        '
+        'gpbSuperfialDeposits
+        '
+        Me.gpbSuperfialDeposits.Controls.Add(Me.rdbSuperficialDepositNK)
+        Me.gpbSuperfialDeposits.Controls.Add(Me.Label38)
+        Me.gpbSuperfialDeposits.Controls.Add(Me.rdbSuperficialDepositNO)
+        Me.gpbSuperfialDeposits.Controls.Add(Me.rdbSuperficialDepositYes)
+        Me.gpbSuperfialDeposits.Location = New System.Drawing.Point(15, 279)
+        Me.gpbSuperfialDeposits.Name = "gpbSuperfialDeposits"
+        Me.gpbSuperfialDeposits.Size = New System.Drawing.Size(312, 84)
+        Me.gpbSuperfialDeposits.TabIndex = 44
+        Me.gpbSuperfialDeposits.TabStop = False
+        Me.gpbSuperfialDeposits.Text = "Superficial Deposits"
+        '
+        'rdbSuperficialDepositNK
+        '
+        Me.rdbSuperficialDepositNK.AutoSize = True
+        Me.rdbSuperficialDepositNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbSuperficialDepositNK.Name = "rdbSuperficialDepositNK"
+        Me.rdbSuperficialDepositNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbSuperficialDepositNK.TabIndex = 43
+        Me.rdbSuperficialDepositNK.TabStop = True
+        Me.rdbSuperficialDepositNK.Text = "Not known"
+        Me.rdbSuperficialDepositNK.UseVisualStyleBackColor = True
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Location = New System.Drawing.Point(4, 22)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(121, 32)
+        Me.Label38.TabIndex = 42
+        Me.Label38.Text = "Are there suerficial " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "deposits on site?"
+        '
+        'rdbSuperficialDepositNO
+        '
+        Me.rdbSuperficialDepositNO.AutoSize = True
+        Me.rdbSuperficialDepositNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbSuperficialDepositNO.Name = "rdbSuperficialDepositNO"
+        Me.rdbSuperficialDepositNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbSuperficialDepositNO.TabIndex = 1
+        Me.rdbSuperficialDepositNO.TabStop = True
+        Me.rdbSuperficialDepositNO.Text = "No"
+        Me.rdbSuperficialDepositNO.UseVisualStyleBackColor = True
+        '
+        'rdbSuperficialDepositYes
+        '
+        Me.rdbSuperficialDepositYes.AutoSize = True
+        Me.rdbSuperficialDepositYes.Location = New System.Drawing.Point(219, 14)
+        Me.rdbSuperficialDepositYes.Name = "rdbSuperficialDepositYes"
+        Me.rdbSuperficialDepositYes.Size = New System.Drawing.Size(46, 17)
+        Me.rdbSuperficialDepositYes.TabIndex = 0
+        Me.rdbSuperficialDepositYes.TabStop = True
+        Me.rdbSuperficialDepositYes.Text = "Yes"
+        Me.rdbSuperficialDepositYes.UseVisualStyleBackColor = True
+        '
+        'GroupBox13
+        '
+        Me.GroupBox13.Controls.Add(Me.cmbPerchedWaterTable)
+        Me.GroupBox13.Location = New System.Drawing.Point(12, 368)
+        Me.GroupBox13.Name = "GroupBox13"
+        Me.GroupBox13.Size = New System.Drawing.Size(315, 60)
+        Me.GroupBox13.TabIndex = 47
+        Me.GroupBox13.TabStop = False
+        Me.GroupBox13.Text = "Perched Water Table"
+        '
+        'cmbPerchedWaterTable
+        '
+        Me.cmbPerchedWaterTable.FormattingEnabled = True
+        Me.cmbPerchedWaterTable.Location = New System.Drawing.Point(32, 26)
+        Me.cmbPerchedWaterTable.Name = "cmbPerchedWaterTable"
+        Me.cmbPerchedWaterTable.Size = New System.Drawing.Size(239, 21)
+        Me.cmbPerchedWaterTable.TabIndex = 0
+        '
+        'gpbMadeGroundContinuous
+        '
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.Label45)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.Label37)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.RadioButton4)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.TextBox1)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.Label36)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.RadioButton5)
+        Me.gpbMadeGroundContinuous.Controls.Add(Me.RadioButton6)
+        Me.gpbMadeGroundContinuous.Enabled = False
+        Me.gpbMadeGroundContinuous.Location = New System.Drawing.Point(12, 145)
+        Me.gpbMadeGroundContinuous.Name = "gpbMadeGroundContinuous"
+        Me.gpbMadeGroundContinuous.Size = New System.Drawing.Size(315, 128)
+        Me.gpbMadeGroundContinuous.TabIndex = 44
+        Me.gpbMadeGroundContinuous.TabStop = False
+        Me.gpbMadeGroundContinuous.Text = "Made Ground Continuous"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(268, 99)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(45, 15)
+        Me.Label45.TabIndex = 47
+        Me.Label45.Text = "metres"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(3, 98)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(199, 16)
+        Me.Label37.TabIndex = 46
+        Me.Label37.Text = "What is the maximum thickness?"
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(219, 66)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(86, 17)
+        Me.RadioButton4.TabIndex = 43
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Not known"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(203, 97)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(65, 20)
+        Me.TextBox1.TabIndex = 45
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(4, 26)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(208, 16)
+        Me.Label36.TabIndex = 42
+        Me.Label36.Text = "Is there made ground continuous?"
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(219, 42)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(41, 17)
+        Me.RadioButton5.TabIndex = 1
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "No"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(219, 18)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(46, 17)
+        Me.RadioButton6.TabIndex = 0
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "Yes"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'gpbMadeGround
+        '
+        Me.gpbMadeGround.Controls.Add(Me.rdbMadeGroundNK)
+        Me.gpbMadeGround.Controls.Add(Me.Label35)
+        Me.gpbMadeGround.Controls.Add(Me.rdbMadeGroundNO)
+        Me.gpbMadeGround.Controls.Add(Me.rdbMadeGroundYes)
+        Me.gpbMadeGround.Location = New System.Drawing.Point(12, 49)
+        Me.gpbMadeGround.Name = "gpbMadeGround"
+        Me.gpbMadeGround.Size = New System.Drawing.Size(315, 90)
+        Me.gpbMadeGround.TabIndex = 31
+        Me.gpbMadeGround.TabStop = False
+        Me.gpbMadeGround.Text = "Made Ground"
+        '
+        'rdbMadeGroundNK
+        '
+        Me.rdbMadeGroundNK.AutoSize = True
+        Me.rdbMadeGroundNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbMadeGroundNK.Name = "rdbMadeGroundNK"
+        Me.rdbMadeGroundNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbMadeGroundNK.TabIndex = 43
+        Me.rdbMadeGroundNK.TabStop = True
+        Me.rdbMadeGroundNK.Text = "Not known"
+        Me.rdbMadeGroundNK.UseVisualStyleBackColor = True
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Location = New System.Drawing.Point(4, 22)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(183, 16)
+        Me.Label35.TabIndex = 42
+        Me.Label35.Text = "Is there made ground on site?"
+        '
+        'rdbMadeGroundNO
+        '
+        Me.rdbMadeGroundNO.AutoSize = True
+        Me.rdbMadeGroundNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbMadeGroundNO.Name = "rdbMadeGroundNO"
+        Me.rdbMadeGroundNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbMadeGroundNO.TabIndex = 1
+        Me.rdbMadeGroundNO.TabStop = True
+        Me.rdbMadeGroundNO.Text = "No"
+        Me.rdbMadeGroundNO.UseVisualStyleBackColor = True
+        '
+        'rdbMadeGroundYes
+        '
+        Me.rdbMadeGroundYes.AutoSize = True
+        Me.rdbMadeGroundYes.Location = New System.Drawing.Point(219, 14)
+        Me.rdbMadeGroundYes.Name = "rdbMadeGroundYes"
+        Me.rdbMadeGroundYes.Size = New System.Drawing.Size(46, 17)
+        Me.rdbMadeGroundYes.TabIndex = 0
+        Me.rdbMadeGroundYes.TabStop = True
+        Me.rdbMadeGroundYes.Text = "Yes"
+        Me.rdbMadeGroundYes.UseVisualStyleBackColor = True
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(21, 7)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(67, 16)
+        Me.Label28.TabIndex = 24
+        Me.Label28.Text = "Site Code"
+        '
+        'txtSiteCode2
+        '
+        Me.txtSiteCode2.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode2.Location = New System.Drawing.Point(23, 25)
+        Me.txtSiteCode2.Name = "txtSiteCode2"
+        Me.txtSiteCode2.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode2.TabIndex = 23
+        '
+        'TabGroundwaterAbstraction
+        '
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.gpbSourceProtectionZone)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.gpbLateralFlow)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.gpbUnderlyingAquiferSourceContamination)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.gpbUnderlyingAquifer)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.Label50)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.cmbDataSource)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.Label49)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.cmbNRAAquiferVulnerability)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.Label48)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.cmbNRAAquiferClassification)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.Label47)
+        Me.TabGroundwaterAbstraction.Controls.Add(Me.txtSiteCode3)
+        Me.TabGroundwaterAbstraction.Location = New System.Drawing.Point(4, 22)
+        Me.TabGroundwaterAbstraction.Name = "TabGroundwaterAbstraction"
+        Me.TabGroundwaterAbstraction.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabGroundwaterAbstraction.Size = New System.Drawing.Size(662, 434)
+        Me.TabGroundwaterAbstraction.TabIndex = 3
+        Me.TabGroundwaterAbstraction.Text = "Groundwater & Abstraction"
+        Me.TabGroundwaterAbstraction.UseVisualStyleBackColor = True
+        '
+        'gpbSourceProtectionZone
+        '
+        Me.gpbSourceProtectionZone.Controls.Add(Me.rdbSourceProtectionZoneNK)
+        Me.gpbSourceProtectionZone.Controls.Add(Me.Label54)
+        Me.gpbSourceProtectionZone.Controls.Add(Me.rdbSourceProtectionZoneNO)
+        Me.gpbSourceProtectionZone.Controls.Add(Me.rdbSourceProtectionZoneYES)
+        Me.gpbSourceProtectionZone.Location = New System.Drawing.Point(327, 327)
+        Me.gpbSourceProtectionZone.Name = "gpbSourceProtectionZone"
+        Me.gpbSourceProtectionZone.Size = New System.Drawing.Size(315, 90)
+        Me.gpbSourceProtectionZone.TabIndex = 52
+        Me.gpbSourceProtectionZone.TabStop = False
+        '
+        'rdbSourceProtectionZoneNK
+        '
+        Me.rdbSourceProtectionZoneNK.AutoSize = True
+        Me.rdbSourceProtectionZoneNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbSourceProtectionZoneNK.Name = "rdbSourceProtectionZoneNK"
+        Me.rdbSourceProtectionZoneNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbSourceProtectionZoneNK.TabIndex = 43
+        Me.rdbSourceProtectionZoneNK.TabStop = True
+        Me.rdbSourceProtectionZoneNK.Text = "Not known"
+        Me.rdbSourceProtectionZoneNK.UseVisualStyleBackColor = True
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Location = New System.Drawing.Point(4, 11)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(155, 32)
+        Me.Label54.TabIndex = 42
+        Me.Label54.Text = "Is the site in a " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Source Protection Zone?"
+        '
+        'rdbSourceProtectionZoneNO
+        '
+        Me.rdbSourceProtectionZoneNO.AutoSize = True
+        Me.rdbSourceProtectionZoneNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbSourceProtectionZoneNO.Name = "rdbSourceProtectionZoneNO"
+        Me.rdbSourceProtectionZoneNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbSourceProtectionZoneNO.TabIndex = 1
+        Me.rdbSourceProtectionZoneNO.TabStop = True
+        Me.rdbSourceProtectionZoneNO.Text = "No"
+        Me.rdbSourceProtectionZoneNO.UseVisualStyleBackColor = True
+        '
+        'rdbSourceProtectionZoneYES
+        '
+        Me.rdbSourceProtectionZoneYES.AutoSize = True
+        Me.rdbSourceProtectionZoneYES.Location = New System.Drawing.Point(219, 14)
+        Me.rdbSourceProtectionZoneYES.Name = "rdbSourceProtectionZoneYES"
+        Me.rdbSourceProtectionZoneYES.Size = New System.Drawing.Size(46, 17)
+        Me.rdbSourceProtectionZoneYES.TabIndex = 0
+        Me.rdbSourceProtectionZoneYES.TabStop = True
+        Me.rdbSourceProtectionZoneYES.Text = "Yes"
+        Me.rdbSourceProtectionZoneYES.UseVisualStyleBackColor = True
+        '
+        'gpbLateralFlow
+        '
+        Me.gpbLateralFlow.Controls.Add(Me.rdbLateralFlowNK)
+        Me.gpbLateralFlow.Controls.Add(Me.Label53)
+        Me.gpbLateralFlow.Controls.Add(Me.rdbLateralFlowNO)
+        Me.gpbLateralFlow.Controls.Add(Me.rdbLateralFlowYES)
+        Me.gpbLateralFlow.Location = New System.Drawing.Point(327, 223)
+        Me.gpbLateralFlow.Name = "gpbLateralFlow"
+        Me.gpbLateralFlow.Size = New System.Drawing.Size(315, 90)
+        Me.gpbLateralFlow.TabIndex = 51
+        Me.gpbLateralFlow.TabStop = False
+        '
+        'rdbLateralFlowNK
+        '
+        Me.rdbLateralFlowNK.AutoSize = True
+        Me.rdbLateralFlowNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbLateralFlowNK.Name = "rdbLateralFlowNK"
+        Me.rdbLateralFlowNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbLateralFlowNK.TabIndex = 43
+        Me.rdbLateralFlowNK.TabStop = True
+        Me.rdbLateralFlowNK.Text = "Not known"
+        Me.rdbLateralFlowNK.UseVisualStyleBackColor = True
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label53.Location = New System.Drawing.Point(3, 9)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(120, 32)
+        Me.Label53.TabIndex = 42
+        Me.Label53.Text = "Is there lateral flow " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "onto the site?"
+        '
+        'rdbLateralFlowNO
+        '
+        Me.rdbLateralFlowNO.AutoSize = True
+        Me.rdbLateralFlowNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbLateralFlowNO.Name = "rdbLateralFlowNO"
+        Me.rdbLateralFlowNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbLateralFlowNO.TabIndex = 1
+        Me.rdbLateralFlowNO.TabStop = True
+        Me.rdbLateralFlowNO.Text = "No"
+        Me.rdbLateralFlowNO.UseVisualStyleBackColor = True
+        '
+        'rdbLateralFlowYES
+        '
+        Me.rdbLateralFlowYES.AutoSize = True
+        Me.rdbLateralFlowYES.Location = New System.Drawing.Point(219, 14)
+        Me.rdbLateralFlowYES.Name = "rdbLateralFlowYES"
+        Me.rdbLateralFlowYES.Size = New System.Drawing.Size(46, 17)
+        Me.rdbLateralFlowYES.TabIndex = 0
+        Me.rdbLateralFlowYES.TabStop = True
+        Me.rdbLateralFlowYES.Text = "Yes"
+        Me.rdbLateralFlowYES.UseVisualStyleBackColor = True
+        '
+        'gpbUnderlyingAquiferSourceContamination
+        '
+        Me.gpbUnderlyingAquiferSourceContamination.Controls.Add(Me.rdbUnderlyingAquiferSourceContaminationNK)
+        Me.gpbUnderlyingAquiferSourceContamination.Controls.Add(Me.Label52)
+        Me.gpbUnderlyingAquiferSourceContamination.Controls.Add(Me.rdbUnderlyingAquiferSourceContaminationNO)
+        Me.gpbUnderlyingAquiferSourceContamination.Controls.Add(Me.rdbUnderlyingAquiferSourceContaminationYES)
+        Me.gpbUnderlyingAquiferSourceContamination.Location = New System.Drawing.Point(327, 119)
+        Me.gpbUnderlyingAquiferSourceContamination.Name = "gpbUnderlyingAquiferSourceContamination"
+        Me.gpbUnderlyingAquiferSourceContamination.Size = New System.Drawing.Size(315, 90)
+        Me.gpbUnderlyingAquiferSourceContamination.TabIndex = 50
+        Me.gpbUnderlyingAquiferSourceContamination.TabStop = False
+        '
+        'rdbUnderlyingAquiferSourceContaminationNK
+        '
+        Me.rdbUnderlyingAquiferSourceContaminationNK.AutoSize = True
+        Me.rdbUnderlyingAquiferSourceContaminationNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbUnderlyingAquiferSourceContaminationNK.Name = "rdbUnderlyingAquiferSourceContaminationNK"
+        Me.rdbUnderlyingAquiferSourceContaminationNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbUnderlyingAquiferSourceContaminationNK.TabIndex = 43
+        Me.rdbUnderlyingAquiferSourceContaminationNK.TabStop = True
+        Me.rdbUnderlyingAquiferSourceContaminationNK.Text = "Not known"
+        Me.rdbUnderlyingAquiferSourceContaminationNK.UseVisualStyleBackColor = True
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(4, 9)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(179, 32)
+        Me.Label52.TabIndex = 42
+        Me.Label52.Text = "If ""Yes"", is this site the source" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "of contamination?"
+        '
+        'rdbUnderlyingAquiferSourceContaminationNO
+        '
+        Me.rdbUnderlyingAquiferSourceContaminationNO.AutoSize = True
+        Me.rdbUnderlyingAquiferSourceContaminationNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbUnderlyingAquiferSourceContaminationNO.Name = "rdbUnderlyingAquiferSourceContaminationNO"
+        Me.rdbUnderlyingAquiferSourceContaminationNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbUnderlyingAquiferSourceContaminationNO.TabIndex = 1
+        Me.rdbUnderlyingAquiferSourceContaminationNO.TabStop = True
+        Me.rdbUnderlyingAquiferSourceContaminationNO.Text = "No"
+        Me.rdbUnderlyingAquiferSourceContaminationNO.UseVisualStyleBackColor = True
+        '
+        'rdbUnderlyingAquiferSourceContaminationYES
+        '
+        Me.rdbUnderlyingAquiferSourceContaminationYES.AutoSize = True
+        Me.rdbUnderlyingAquiferSourceContaminationYES.Location = New System.Drawing.Point(219, 14)
+        Me.rdbUnderlyingAquiferSourceContaminationYES.Name = "rdbUnderlyingAquiferSourceContaminationYES"
+        Me.rdbUnderlyingAquiferSourceContaminationYES.Size = New System.Drawing.Size(46, 17)
+        Me.rdbUnderlyingAquiferSourceContaminationYES.TabIndex = 0
+        Me.rdbUnderlyingAquiferSourceContaminationYES.TabStop = True
+        Me.rdbUnderlyingAquiferSourceContaminationYES.Text = "Yes"
+        Me.rdbUnderlyingAquiferSourceContaminationYES.UseVisualStyleBackColor = True
+        '
+        'gpbUnderlyingAquifer
+        '
+        Me.gpbUnderlyingAquifer.Controls.Add(Me.rdbUnderlyingAquiferNK)
+        Me.gpbUnderlyingAquifer.Controls.Add(Me.Label51)
+        Me.gpbUnderlyingAquifer.Controls.Add(Me.rdbUnderlyingAquiferNO)
+        Me.gpbUnderlyingAquifer.Controls.Add(Me.rdbUnderlyingAquiferYES)
+        Me.gpbUnderlyingAquifer.Location = New System.Drawing.Point(328, 16)
+        Me.gpbUnderlyingAquifer.Name = "gpbUnderlyingAquifer"
+        Me.gpbUnderlyingAquifer.Size = New System.Drawing.Size(315, 90)
+        Me.gpbUnderlyingAquifer.TabIndex = 49
+        Me.gpbUnderlyingAquifer.TabStop = False
+        '
+        'rdbUnderlyingAquiferNK
+        '
+        Me.rdbUnderlyingAquiferNK.AutoSize = True
+        Me.rdbUnderlyingAquiferNK.Location = New System.Drawing.Point(219, 62)
+        Me.rdbUnderlyingAquiferNK.Name = "rdbUnderlyingAquiferNK"
+        Me.rdbUnderlyingAquiferNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbUnderlyingAquiferNK.TabIndex = 43
+        Me.rdbUnderlyingAquiferNK.TabStop = True
+        Me.rdbUnderlyingAquiferNK.Text = "Not known"
+        Me.rdbUnderlyingAquiferNK.UseVisualStyleBackColor = True
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.Location = New System.Drawing.Point(4, 10)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(140, 32)
+        Me.Label51.TabIndex = 42
+        Me.Label51.Text = "Is the underlying " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "aquifer contaminated?"
+        '
+        'rdbUnderlyingAquiferNO
+        '
+        Me.rdbUnderlyingAquiferNO.AutoSize = True
+        Me.rdbUnderlyingAquiferNO.Location = New System.Drawing.Point(219, 38)
+        Me.rdbUnderlyingAquiferNO.Name = "rdbUnderlyingAquiferNO"
+        Me.rdbUnderlyingAquiferNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbUnderlyingAquiferNO.TabIndex = 1
+        Me.rdbUnderlyingAquiferNO.TabStop = True
+        Me.rdbUnderlyingAquiferNO.Text = "No"
+        Me.rdbUnderlyingAquiferNO.UseVisualStyleBackColor = True
+        '
+        'rdbUnderlyingAquiferYES
+        '
+        Me.rdbUnderlyingAquiferYES.AutoSize = True
+        Me.rdbUnderlyingAquiferYES.Location = New System.Drawing.Point(219, 14)
+        Me.rdbUnderlyingAquiferYES.Name = "rdbUnderlyingAquiferYES"
+        Me.rdbUnderlyingAquiferYES.Size = New System.Drawing.Size(46, 17)
+        Me.rdbUnderlyingAquiferYES.TabIndex = 0
+        Me.rdbUnderlyingAquiferYES.TabStop = True
+        Me.rdbUnderlyingAquiferYES.Text = "Yes"
+        Me.rdbUnderlyingAquiferYES.UseVisualStyleBackColor = True
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.Location = New System.Drawing.Point(18, 206)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(83, 16)
+        Me.Label50.TabIndex = 48
+        Me.Label50.Text = "Data Source"
+        '
+        'cmbDataSource
+        '
+        Me.cmbDataSource.FormattingEnabled = True
+        Me.cmbDataSource.Location = New System.Drawing.Point(21, 225)
+        Me.cmbDataSource.Name = "cmbDataSource"
+        Me.cmbDataSource.Size = New System.Drawing.Size(239, 21)
+        Me.cmbDataSource.TabIndex = 47
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.Location = New System.Drawing.Point(18, 140)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(158, 16)
+        Me.Label49.TabIndex = 46
+        Me.Label49.Text = "NRA Aquifer Vulnerability"
+        '
+        'cmbNRAAquiferVulnerability
+        '
+        Me.cmbNRAAquiferVulnerability.FormattingEnabled = True
+        Me.cmbNRAAquiferVulnerability.Location = New System.Drawing.Point(21, 159)
+        Me.cmbNRAAquiferVulnerability.Name = "cmbNRAAquiferVulnerability"
+        Me.cmbNRAAquiferVulnerability.Size = New System.Drawing.Size(239, 21)
+        Me.cmbNRAAquiferVulnerability.TabIndex = 45
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Location = New System.Drawing.Point(18, 77)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(164, 16)
+        Me.Label48.TabIndex = 44
+        Me.Label48.Text = "NRA Aquifer Classification"
+        '
+        'cmbNRAAquiferClassification
+        '
+        Me.cmbNRAAquiferClassification.FormattingEnabled = True
+        Me.cmbNRAAquiferClassification.Location = New System.Drawing.Point(21, 96)
+        Me.cmbNRAAquiferClassification.Name = "cmbNRAAquiferClassification"
+        Me.cmbNRAAquiferClassification.Size = New System.Drawing.Size(239, 21)
+        Me.cmbNRAAquiferClassification.TabIndex = 43
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.Location = New System.Drawing.Point(18, 19)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(67, 16)
+        Me.Label47.TabIndex = 26
+        Me.Label47.Text = "Site Code"
+        '
+        'txtSiteCode3
+        '
+        Me.txtSiteCode3.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode3.Location = New System.Drawing.Point(20, 37)
+        Me.txtSiteCode3.Name = "txtSiteCode3"
+        Me.txtSiteCode3.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode3.TabIndex = 25
+        '
+        'TabSurfaceWaterEnvironment
+        '
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.gpbSurfaceWaterUseNearest)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.gpbSurfaceWaterUse)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.Label64)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.chkSensitiveEnvironmentalTargets)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.gpbSensitiveEnvironmentalTargets)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.gpbWaterBodies)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.Label59)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.chkWaterBodies)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.Label55)
+        Me.TabSurfaceWaterEnvironment.Controls.Add(Me.txtSiteCode4)
+        Me.TabSurfaceWaterEnvironment.Location = New System.Drawing.Point(4, 22)
+        Me.TabSurfaceWaterEnvironment.Name = "TabSurfaceWaterEnvironment"
+        Me.TabSurfaceWaterEnvironment.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabSurfaceWaterEnvironment.Size = New System.Drawing.Size(662, 434)
+        Me.TabSurfaceWaterEnvironment.TabIndex = 4
+        Me.TabSurfaceWaterEnvironment.Text = "Surface Water & Environment"
+        Me.TabSurfaceWaterEnvironment.UseVisualStyleBackColor = True
+        '
+        'gpbSurfaceWaterUseNearest
+        '
+        Me.gpbSurfaceWaterUseNearest.Controls.Add(Me.Label70)
+        Me.gpbSurfaceWaterUseNearest.Controls.Add(Me.ComboBox1)
+        Me.gpbSurfaceWaterUseNearest.Location = New System.Drawing.Point(328, 329)
+        Me.gpbSurfaceWaterUseNearest.Name = "gpbSurfaceWaterUseNearest"
+        Me.gpbSurfaceWaterUseNearest.Size = New System.Drawing.Size(315, 85)
+        Me.gpbSurfaceWaterUseNearest.TabIndex = 73
+        Me.gpbSurfaceWaterUseNearest.TabStop = False
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Location = New System.Drawing.Point(32, 14)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(146, 32)
+        Me.Label70.TabIndex = 49
+        Me.Label70.Text = "If ""Yes"", what is the end" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "use of the nearest one?"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(5, 52)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(199, 21)
+        Me.ComboBox1.TabIndex = 48
+        '
+        'gpbSurfaceWaterUse
+        '
+        Me.gpbSurfaceWaterUse.Controls.Add(Me.rdbSurfaceWaterUseNK)
+        Me.gpbSurfaceWaterUse.Controls.Add(Me.rdbSurfaceWaterUseNO)
+        Me.gpbSurfaceWaterUse.Controls.Add(Me.rdbSurfaceWaterUseYES)
+        Me.gpbSurfaceWaterUse.Controls.Add(Me.Label68)
+        Me.gpbSurfaceWaterUse.Location = New System.Drawing.Point(328, 238)
+        Me.gpbSurfaceWaterUse.Name = "gpbSurfaceWaterUse"
+        Me.gpbSurfaceWaterUse.Size = New System.Drawing.Size(315, 88)
+        Me.gpbSurfaceWaterUse.TabIndex = 72
+        Me.gpbSurfaceWaterUse.TabStop = False
+        '
+        'rdbSurfaceWaterUseNK
+        '
+        Me.rdbSurfaceWaterUseNK.AutoSize = True
+        Me.rdbSurfaceWaterUseNK.Location = New System.Drawing.Point(219, 63)
+        Me.rdbSurfaceWaterUseNK.Name = "rdbSurfaceWaterUseNK"
+        Me.rdbSurfaceWaterUseNK.Size = New System.Drawing.Size(86, 17)
+        Me.rdbSurfaceWaterUseNK.TabIndex = 52
+        Me.rdbSurfaceWaterUseNK.TabStop = True
+        Me.rdbSurfaceWaterUseNK.Text = "Not known"
+        Me.rdbSurfaceWaterUseNK.UseVisualStyleBackColor = True
+        '
+        'rdbSurfaceWaterUseNO
+        '
+        Me.rdbSurfaceWaterUseNO.AutoSize = True
+        Me.rdbSurfaceWaterUseNO.Location = New System.Drawing.Point(219, 39)
+        Me.rdbSurfaceWaterUseNO.Name = "rdbSurfaceWaterUseNO"
+        Me.rdbSurfaceWaterUseNO.Size = New System.Drawing.Size(41, 17)
+        Me.rdbSurfaceWaterUseNO.TabIndex = 51
+        Me.rdbSurfaceWaterUseNO.TabStop = True
+        Me.rdbSurfaceWaterUseNO.Text = "No"
+        Me.rdbSurfaceWaterUseNO.UseVisualStyleBackColor = True
+        '
+        'rdbSurfaceWaterUseYES
+        '
+        Me.rdbSurfaceWaterUseYES.AutoSize = True
+        Me.rdbSurfaceWaterUseYES.Location = New System.Drawing.Point(219, 15)
+        Me.rdbSurfaceWaterUseYES.Name = "rdbSurfaceWaterUseYES"
+        Me.rdbSurfaceWaterUseYES.Size = New System.Drawing.Size(46, 17)
+        Me.rdbSurfaceWaterUseYES.TabIndex = 50
+        Me.rdbSurfaceWaterUseYES.TabStop = True
+        Me.rdbSurfaceWaterUseYES.Text = "Yes"
+        Me.rdbSurfaceWaterUseYES.UseVisualStyleBackColor = True
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.Location = New System.Drawing.Point(3, 10)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(210, 32)
+        Me.Label68.TabIndex = 42
+        Me.Label68.Text = "Is there any surface water use or " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "abstraction within 500m of the site?"
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label64.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label64.Location = New System.Drawing.Point(10, 246)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(190, 13)
+        Me.Label64.TabIndex = 71
+        Me.Label64.Text = "Sensitive Environmental Targets"
+        '
+        'chkSensitiveEnvironmentalTargets
+        '
+        Me.chkSensitiveEnvironmentalTargets.AutoSize = True
+        Me.chkSensitiveEnvironmentalTargets.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkSensitiveEnvironmentalTargets.Location = New System.Drawing.Point(206, 245)
+        Me.chkSensitiveEnvironmentalTargets.Name = "chkSensitiveEnvironmentalTargets"
+        Me.chkSensitiveEnvironmentalTargets.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.chkSensitiveEnvironmentalTargets.Size = New System.Drawing.Size(95, 17)
+        Me.chkSensitiveEnvironmentalTargets.TabIndex = 70
+        Me.chkSensitiveEnvironmentalTargets.Text = "No Information"
+        Me.chkSensitiveEnvironmentalTargets.UseVisualStyleBackColor = True
+        '
+        'gpbSensitiveEnvironmentalTargets
+        '
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.txtSensitiveEnvironmentalTargetsDistance3)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.cmbSensitiveEnvironmentalTargetsType3)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.txtSensitiveEnvironmentalTargetsDistance2)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.cmbSensitiveEnvironmentalTargetsType2)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.txtSensitiveEnvironmentalTargetsDistance1)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.Label65)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.Label67)
+        Me.gpbSensitiveEnvironmentalTargets.Controls.Add(Me.cmbSensitiveEnvironmentalTargetsType1)
+        Me.gpbSensitiveEnvironmentalTargets.Location = New System.Drawing.Point(9, 265)
+        Me.gpbSensitiveEnvironmentalTargets.Name = "gpbSensitiveEnvironmentalTargets"
+        Me.gpbSensitiveEnvironmentalTargets.Size = New System.Drawing.Size(303, 149)
+        Me.gpbSensitiveEnvironmentalTargets.TabIndex = 69
+        Me.gpbSensitiveEnvironmentalTargets.TabStop = False
+        '
+        'txtSensitiveEnvironmentalTargetsDistance3
+        '
+        Me.txtSensitiveEnvironmentalTargetsDistance3.Location = New System.Drawing.Point(9, 117)
+        Me.txtSensitiveEnvironmentalTargetsDistance3.Name = "txtSensitiveEnvironmentalTargetsDistance3"
+        Me.txtSensitiveEnvironmentalTargetsDistance3.Size = New System.Drawing.Size(125, 20)
+        Me.txtSensitiveEnvironmentalTargetsDistance3.TabIndex = 62
+        '
+        'cmbSensitiveEnvironmentalTargetsType3
+        '
+        Me.cmbSensitiveEnvironmentalTargetsType3.FormattingEnabled = True
+        Me.cmbSensitiveEnvironmentalTargetsType3.Location = New System.Drawing.Point(143, 116)
+        Me.cmbSensitiveEnvironmentalTargetsType3.Name = "cmbSensitiveEnvironmentalTargetsType3"
+        Me.cmbSensitiveEnvironmentalTargetsType3.Size = New System.Drawing.Size(150, 21)
+        Me.cmbSensitiveEnvironmentalTargetsType3.TabIndex = 61
+        '
+        'txtSensitiveEnvironmentalTargetsDistance2
+        '
+        Me.txtSensitiveEnvironmentalTargetsDistance2.Location = New System.Drawing.Point(8, 84)
+        Me.txtSensitiveEnvironmentalTargetsDistance2.Name = "txtSensitiveEnvironmentalTargetsDistance2"
+        Me.txtSensitiveEnvironmentalTargetsDistance2.Size = New System.Drawing.Size(125, 20)
+        Me.txtSensitiveEnvironmentalTargetsDistance2.TabIndex = 58
+        '
+        'cmbSensitiveEnvironmentalTargetsType2
+        '
+        Me.cmbSensitiveEnvironmentalTargetsType2.FormattingEnabled = True
+        Me.cmbSensitiveEnvironmentalTargetsType2.Location = New System.Drawing.Point(142, 83)
+        Me.cmbSensitiveEnvironmentalTargetsType2.Name = "cmbSensitiveEnvironmentalTargetsType2"
+        Me.cmbSensitiveEnvironmentalTargetsType2.Size = New System.Drawing.Size(150, 21)
+        Me.cmbSensitiveEnvironmentalTargetsType2.TabIndex = 57
+        '
+        'txtSensitiveEnvironmentalTargetsDistance1
+        '
+        Me.txtSensitiveEnvironmentalTargetsDistance1.Location = New System.Drawing.Point(8, 51)
+        Me.txtSensitiveEnvironmentalTargetsDistance1.Name = "txtSensitiveEnvironmentalTargetsDistance1"
+        Me.txtSensitiveEnvironmentalTargetsDistance1.Size = New System.Drawing.Size(125, 20)
+        Me.txtSensitiveEnvironmentalTargetsDistance1.TabIndex = 48
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Location = New System.Drawing.Point(26, 16)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(93, 32)
+        Me.Label65.TabIndex = 49
+        Me.Label65.Text = "Distance  from" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      site (m)"
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Location = New System.Drawing.Point(163, 15)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(97, 16)
+        Me.Label67.TabIndex = 47
+        Me.Label67.Text = "Type of Target"
+        '
+        'cmbSensitiveEnvironmentalTargetsType1
+        '
+        Me.cmbSensitiveEnvironmentalTargetsType1.FormattingEnabled = True
+        Me.cmbSensitiveEnvironmentalTargetsType1.Location = New System.Drawing.Point(142, 50)
+        Me.cmbSensitiveEnvironmentalTargetsType1.Name = "cmbSensitiveEnvironmentalTargetsType1"
+        Me.cmbSensitiveEnvironmentalTargetsType1.Size = New System.Drawing.Size(150, 21)
+        Me.cmbSensitiveEnvironmentalTargetsType1.TabIndex = 1
+        '
+        'gpbWaterBodies
+        '
+        Me.gpbWaterBodies.Controls.Add(Me.cmbFlowRate3)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbGQAWaterQuality3)
+        Me.gpbWaterBodies.Controls.Add(Me.txtWaterBodyTypeDistance3)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbWaterBodyType3)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbFlowRate2)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbGQAWaterQuality2)
+        Me.gpbWaterBodies.Controls.Add(Me.txtWaterBodyTypeDistance2)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbWaterBodyType2)
+        Me.gpbWaterBodies.Controls.Add(Me.Label62)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbFlowRate1)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbGQAWaterQuality1)
+        Me.gpbWaterBodies.Controls.Add(Me.txtWaterBodyTypeDistance1)
+        Me.gpbWaterBodies.Controls.Add(Me.Label60)
+        Me.gpbWaterBodies.Controls.Add(Me.Label63)
+        Me.gpbWaterBodies.Controls.Add(Me.Label61)
+        Me.gpbWaterBodies.Controls.Add(Me.cmbWaterBodyType1)
+        Me.gpbWaterBodies.Location = New System.Drawing.Point(9, 78)
+        Me.gpbWaterBodies.Name = "gpbWaterBodies"
+        Me.gpbWaterBodies.Size = New System.Drawing.Size(634, 153)
+        Me.gpbWaterBodies.TabIndex = 46
+        Me.gpbWaterBodies.TabStop = False
+        '
+        'cmbFlowRate3
+        '
+        Me.cmbFlowRate3.FormattingEnabled = True
+        Me.cmbFlowRate3.Location = New System.Drawing.Point(469, 117)
+        Me.cmbFlowRate3.Name = "cmbFlowRate3"
+        Me.cmbFlowRate3.Size = New System.Drawing.Size(150, 21)
+        Me.cmbFlowRate3.TabIndex = 80
+        '
+        'cmbGQAWaterQuality3
+        '
+        Me.cmbGQAWaterQuality3.FormattingEnabled = True
+        Me.cmbGQAWaterQuality3.Location = New System.Drawing.Point(310, 117)
+        Me.cmbGQAWaterQuality3.Name = "cmbGQAWaterQuality3"
+        Me.cmbGQAWaterQuality3.Size = New System.Drawing.Size(150, 21)
+        Me.cmbGQAWaterQuality3.TabIndex = 79
+        '
+        'txtWaterBodyTypeDistance3
+        '
+        Me.txtWaterBodyTypeDistance3.Location = New System.Drawing.Point(175, 117)
+        Me.txtWaterBodyTypeDistance3.Name = "txtWaterBodyTypeDistance3"
+        Me.txtWaterBodyTypeDistance3.Size = New System.Drawing.Size(125, 20)
+        Me.txtWaterBodyTypeDistance3.TabIndex = 78
+        '
+        'cmbWaterBodyType3
+        '
+        Me.cmbWaterBodyType3.FormattingEnabled = True
+        Me.cmbWaterBodyType3.Location = New System.Drawing.Point(16, 117)
+        Me.cmbWaterBodyType3.Name = "cmbWaterBodyType3"
+        Me.cmbWaterBodyType3.Size = New System.Drawing.Size(150, 21)
+        Me.cmbWaterBodyType3.TabIndex = 77
+        '
+        'cmbFlowRate2
+        '
+        Me.cmbFlowRate2.FormattingEnabled = True
+        Me.cmbFlowRate2.Location = New System.Drawing.Point(468, 83)
+        Me.cmbFlowRate2.Name = "cmbFlowRate2"
+        Me.cmbFlowRate2.Size = New System.Drawing.Size(150, 21)
+        Me.cmbFlowRate2.TabIndex = 76
+        '
+        'cmbGQAWaterQuality2
+        '
+        Me.cmbGQAWaterQuality2.FormattingEnabled = True
+        Me.cmbGQAWaterQuality2.Location = New System.Drawing.Point(309, 83)
+        Me.cmbGQAWaterQuality2.Name = "cmbGQAWaterQuality2"
+        Me.cmbGQAWaterQuality2.Size = New System.Drawing.Size(150, 21)
+        Me.cmbGQAWaterQuality2.TabIndex = 75
+        '
+        'txtWaterBodyTypeDistance2
+        '
+        Me.txtWaterBodyTypeDistance2.Location = New System.Drawing.Point(174, 83)
+        Me.txtWaterBodyTypeDistance2.Name = "txtWaterBodyTypeDistance2"
+        Me.txtWaterBodyTypeDistance2.Size = New System.Drawing.Size(125, 20)
+        Me.txtWaterBodyTypeDistance2.TabIndex = 74
+        '
+        'cmbWaterBodyType2
+        '
+        Me.cmbWaterBodyType2.FormattingEnabled = True
+        Me.cmbWaterBodyType2.Location = New System.Drawing.Point(15, 83)
+        Me.cmbWaterBodyType2.Name = "cmbWaterBodyType2"
+        Me.cmbWaterBodyType2.Size = New System.Drawing.Size(150, 21)
+        Me.cmbWaterBodyType2.TabIndex = 73
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Location = New System.Drawing.Point(346, 15)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(89, 32)
+        Me.Label62.TabIndex = 72
+        Me.Label62.Text = "Existing GQA " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Water Quality"
+        '
+        'cmbFlowRate1
+        '
+        Me.cmbFlowRate1.FormattingEnabled = True
+        Me.cmbFlowRate1.Location = New System.Drawing.Point(468, 50)
+        Me.cmbFlowRate1.Name = "cmbFlowRate1"
+        Me.cmbFlowRate1.Size = New System.Drawing.Size(150, 21)
+        Me.cmbFlowRate1.TabIndex = 71
+        '
+        'cmbGQAWaterQuality1
+        '
+        Me.cmbGQAWaterQuality1.FormattingEnabled = True
+        Me.cmbGQAWaterQuality1.Location = New System.Drawing.Point(309, 50)
+        Me.cmbGQAWaterQuality1.Name = "cmbGQAWaterQuality1"
+        Me.cmbGQAWaterQuality1.Size = New System.Drawing.Size(150, 21)
+        Me.cmbGQAWaterQuality1.TabIndex = 70
+        '
+        'txtWaterBodyTypeDistance1
+        '
+        Me.txtWaterBodyTypeDistance1.Location = New System.Drawing.Point(174, 50)
+        Me.txtWaterBodyTypeDistance1.Name = "txtWaterBodyTypeDistance1"
+        Me.txtWaterBodyTypeDistance1.Size = New System.Drawing.Size(125, 20)
+        Me.txtWaterBodyTypeDistance1.TabIndex = 68
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(192, 15)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(93, 32)
+        Me.Label60.TabIndex = 69
+        Me.Label60.Text = "Distance  from" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      site (m)"
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(500, 15)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(68, 16)
+        Me.Label63.TabIndex = 66
+        Me.Label63.Text = "Flow Rate"
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(31, 15)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(114, 16)
+        Me.Label61.TabIndex = 67
+        Me.Label61.Text = "Water Body Type"
+        '
+        'cmbWaterBodyType1
+        '
+        Me.cmbWaterBodyType1.FormattingEnabled = True
+        Me.cmbWaterBodyType1.Location = New System.Drawing.Point(15, 50)
+        Me.cmbWaterBodyType1.Name = "cmbWaterBodyType1"
+        Me.cmbWaterBodyType1.Size = New System.Drawing.Size(150, 21)
+        Me.cmbWaterBodyType1.TabIndex = 65
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label59.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label59.Location = New System.Drawing.Point(21, 61)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(83, 13)
+        Me.Label59.TabIndex = 43
+        Me.Label59.Text = "Water Bodies"
+        '
+        'chkWaterBodies
+        '
+        Me.chkWaterBodies.AutoSize = True
+        Me.chkWaterBodies.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkWaterBodies.Location = New System.Drawing.Point(117, 60)
+        Me.chkWaterBodies.Name = "chkWaterBodies"
+        Me.chkWaterBodies.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.chkWaterBodies.Size = New System.Drawing.Size(95, 17)
+        Me.chkWaterBodies.TabIndex = 29
+        Me.chkWaterBodies.Text = "No Information"
+        Me.chkWaterBodies.UseVisualStyleBackColor = True
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.Location = New System.Drawing.Point(6, 6)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(67, 16)
+        Me.Label55.TabIndex = 28
+        Me.Label55.Text = "Site Code"
+        '
+        'txtSiteCode4
+        '
+        Me.txtSiteCode4.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode4.Location = New System.Drawing.Point(8, 24)
+        Me.txtSiteCode4.Name = "txtSiteCode4"
+        Me.txtSiteCode4.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode4.TabIndex = 27
+        '
+        'TabContaminationPathways
+        '
+        Me.TabContaminationPathways.Controls.Add(Me.NumericUpDown1)
+        Me.TabContaminationPathways.Controls.Add(Me.Label77)
+        Me.TabContaminationPathways.Controls.Add(Me.Label76)
+        Me.TabContaminationPathways.Controls.Add(Me.Label74)
+        Me.TabContaminationPathways.Controls.Add(Me.Label75)
+        Me.TabContaminationPathways.Controls.Add(Me.Label72)
+        Me.TabContaminationPathways.Controls.Add(Me.Label73)
+        Me.TabContaminationPathways.Controls.Add(Me.Label71)
+        Me.TabContaminationPathways.Controls.Add(Me.Label69)
+        Me.TabContaminationPathways.Controls.Add(Me.Label56)
+        Me.TabContaminationPathways.Controls.Add(Me.txtSiteCode5)
+        Me.TabContaminationPathways.Location = New System.Drawing.Point(4, 22)
+        Me.TabContaminationPathways.Name = "TabContaminationPathways"
+        Me.TabContaminationPathways.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabContaminationPathways.Size = New System.Drawing.Size(662, 434)
+        Me.TabContaminationPathways.TabIndex = 5
+        Me.TabContaminationPathways.Text = "Contamination Pathways"
+        Me.TabContaminationPathways.UseVisualStyleBackColor = True
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.Location = New System.Drawing.Point(6, 8)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(67, 16)
+        Me.Label56.TabIndex = 28
+        Me.Label56.Text = "Site Code"
+        '
+        'txtSiteCode5
+        '
+        Me.txtSiteCode5.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode5.Location = New System.Drawing.Point(8, 26)
+        Me.txtSiteCode5.Name = "txtSiteCode5"
+        Me.txtSiteCode5.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode5.TabIndex = 27
+        '
+        'TabReferences
+        '
+        Me.TabReferences.Controls.Add(Me.Label57)
+        Me.TabReferences.Controls.Add(Me.txtSiteCode6)
+        Me.TabReferences.Location = New System.Drawing.Point(4, 22)
+        Me.TabReferences.Name = "TabReferences"
+        Me.TabReferences.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabReferences.Size = New System.Drawing.Size(662, 434)
+        Me.TabReferences.TabIndex = 6
+        Me.TabReferences.Text = "References"
+        Me.TabReferences.UseVisualStyleBackColor = True
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.Location = New System.Drawing.Point(6, 19)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(67, 16)
+        Me.Label57.TabIndex = 28
+        Me.Label57.Text = "Site Code"
+        '
+        'txtSiteCode6
+        '
+        Me.txtSiteCode6.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode6.Location = New System.Drawing.Point(8, 37)
+        Me.txtSiteCode6.Name = "txtSiteCode6"
+        Me.txtSiteCode6.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode6.TabIndex = 27
+        '
+        'TabYourDetails
+        '
+        Me.TabYourDetails.Controls.Add(Me.Label58)
+        Me.TabYourDetails.Controls.Add(Me.txtSiteCode7)
+        Me.TabYourDetails.Location = New System.Drawing.Point(4, 22)
+        Me.TabYourDetails.Name = "TabYourDetails"
+        Me.TabYourDetails.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabYourDetails.Size = New System.Drawing.Size(662, 434)
+        Me.TabYourDetails.TabIndex = 7
+        Me.TabYourDetails.Text = "Your Details"
+        Me.TabYourDetails.UseVisualStyleBackColor = True
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.Location = New System.Drawing.Point(6, 19)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(67, 16)
+        Me.Label58.TabIndex = 28
+        Me.Label58.Text = "Site Code"
+        '
+        'txtSiteCode7
+        '
+        Me.txtSiteCode7.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtSiteCode7.Location = New System.Drawing.Point(8, 37)
+        Me.txtSiteCode7.Name = "txtSiteCode7"
+        Me.txtSiteCode7.Size = New System.Drawing.Size(173, 20)
+        Me.txtSiteCode7.TabIndex = 27
+        '
+        'btn_CommitChanges
+        '
+        Me.btn_CommitChanges.Location = New System.Drawing.Point(14, 24)
+        Me.btn_CommitChanges.Name = "btn_CommitChanges"
+        Me.btn_CommitChanges.Size = New System.Drawing.Size(95, 25)
+        Me.btn_CommitChanges.TabIndex = 3
+        Me.btn_CommitChanges.Text = "Commit Changes"
+        Me.btn_CommitChanges.UseVisualStyleBackColor = True
+        '
+        'btn_Load
+        '
+        Me.btn_Load.Location = New System.Drawing.Point(12, 19)
+        Me.btn_Load.Name = "btn_Load"
+        Me.btn_Load.Size = New System.Drawing.Size(95, 25)
+        Me.btn_Load.TabIndex = 2
+        Me.btn_Load.Text = "Load Site Data"
+        Me.btn_Load.UseVisualStyleBackColor = True
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 462)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(810, 22)
+        Me.StatusStrip1.TabIndex = 4
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.ForeColor = System.Drawing.Color.Red
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(59, 17)
+        Me.ToolStripStatusLabel1.Text = "Waiting...."
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.Filter = "Site Data files (*.mdb)|*.mdb|All files (*.*)|*.*"""
+        '
+        'btn_Exit
+        '
+        Me.btn_Exit.BackColor = System.Drawing.SystemColors.Control
+        Me.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btn_Exit.Location = New System.Drawing.Point(711, 417)
+        Me.btn_Exit.Name = "btn_Exit"
+        Me.btn_Exit.Size = New System.Drawing.Size(62, 23)
+        Me.btn_Exit.TabIndex = 5
+        Me.btn_Exit.Text = "Exit"
+        Me.btn_Exit.UseVisualStyleBackColor = False
+        '
+        'btn_SaveAs
+        '
+        Me.btn_SaveAs.Location = New System.Drawing.Point(12, 54)
+        Me.btn_SaveAs.Name = "btn_SaveAs"
+        Me.btn_SaveAs.Size = New System.Drawing.Size(95, 25)
+        Me.btn_SaveAs.TabIndex = 6
+        Me.btn_SaveAs.Text = "Save Site Data"
+        Me.btn_SaveAs.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btn_SaveAs)
+        Me.GroupBox1.Controls.Add(Me.btn_Load)
+        Me.GroupBox1.Location = New System.Drawing.Point(681, 24)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(120, 90)
+        Me.GroupBox1.TabIndex = 11
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Stored Sites Data"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.btn_CommitChanges)
+        Me.GroupBox2.Location = New System.Drawing.Point(681, 120)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(120, 60)
+        Me.GroupBox2.TabIndex = 12
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Site Data"
+        '
+        'btn_Access
+        '
+        Me.btn_Access.Location = New System.Drawing.Point(14, 22)
+        Me.btn_Access.Name = "btn_Access"
+        Me.btn_Access.Size = New System.Drawing.Size(95, 25)
+        Me.btn_Access.TabIndex = 13
+        Me.btn_Access.Text = "MS Access"
+        Me.btn_Access.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btn_Access)
+        Me.GroupBox4.Location = New System.Drawing.Point(681, 186)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(120, 60)
+        Me.GroupBox4.TabIndex = 14
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Programs"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(693, 309)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Site Boundaries"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(219, 62)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(77, 17)
+        Me.RadioButton1.TabIndex = 43
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Not known"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(4, 10)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(140, 32)
+        Me.Label66.TabIndex = 42
+        Me.Label66.Text = "Is the underlying " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "aquifer contaminated?"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(219, 38)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(39, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "No"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(219, 14)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(43, 17)
+        Me.RadioButton3.TabIndex = 0
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Yes"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Location = New System.Drawing.Point(21, 90)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(67, 16)
+        Me.Label69.TabIndex = 29
+        Me.Label69.Text = "Site Code"
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.Location = New System.Drawing.Point(21, 136)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(67, 16)
+        Me.Label71.TabIndex = 30
+        Me.Label71.Text = "Site Code"
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.Location = New System.Drawing.Point(21, 228)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(67, 16)
+        Me.Label72.TabIndex = 32
+        Me.Label72.Text = "Site Code"
+        '
+        'Label73
+        '
+        Me.Label73.AutoSize = True
+        Me.Label73.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.Location = New System.Drawing.Point(21, 182)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(67, 16)
+        Me.Label73.TabIndex = 31
+        Me.Label73.Text = "Site Code"
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.Location = New System.Drawing.Point(21, 320)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(67, 16)
+        Me.Label74.TabIndex = 34
+        Me.Label74.Text = "Site Code"
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.Location = New System.Drawing.Point(21, 274)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(67, 16)
+        Me.Label75.TabIndex = 33
+        Me.Label75.Text = "Site Code"
+        '
+        'Label76
+        '
+        Me.Label76.AutoSize = True
+        Me.Label76.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label76.Location = New System.Drawing.Point(21, 393)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(67, 16)
+        Me.Label76.TabIndex = 35
+        Me.Label76.Text = "Site Code"
+        '
+        'Label77
+        '
+        Me.Label77.AutoSize = True
+        Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label77.Location = New System.Drawing.Point(140, 63)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(67, 16)
+        Me.Label77.TabIndex = 36
+        Me.Label77.Text = "Site Code"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(331, 188)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown1.TabIndex = 37
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(810, 484)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btn_Exit)
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Name = "Form1"
+        Me.Text = "Site Prioritisation Model"
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabSiteInformation.ResumeLayout(False)
+        Me.TabSiteInformation.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.tabSurfaceDetails.ResumeLayout(False)
+        Me.tabSurfaceDetails.PerformLayout()
+        Me.gpbPermeableImpermeableMaterial.ResumeLayout(False)
+        Me.gpbPermeableImpermeableMaterial.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.gpbStandingWaterHistory.ResumeLayout(False)
+        Me.gpbStandingWaterHistory.PerformLayout()
+        Me.gpbFloodingHistory.ResumeLayout(False)
+        Me.gpbFloodingHistory.PerformLayout()
+        Me.gpbNatureOfMaterial.ResumeLayout(False)
+        Me.gpbNatureOfMaterial.PerformLayout()
+        Me.gpbPercentages.ResumeLayout(False)
+        Me.gpbPercentages.PerformLayout()
+        Me.gpdCoveredOtherMaterial.ResumeLayout(False)
+        Me.gpdCoveredOtherMaterial.PerformLayout()
+        Me.TabSubSurfaceConditions.ResumeLayout(False)
+        Me.TabSubSurfaceConditions.PerformLayout()
+        Me.gpbBedrockGeology.ResumeLayout(False)
+        Me.gpbBedrockGeology.PerformLayout()
+        Me.gpbTypeOfDeposit.ResumeLayout(False)
+        Me.gpbTypeOfDeposit.PerformLayout()
+        Me.gpbSuperfialDeposits.ResumeLayout(False)
+        Me.gpbSuperfialDeposits.PerformLayout()
+        Me.GroupBox13.ResumeLayout(False)
+        Me.gpbMadeGroundContinuous.ResumeLayout(False)
+        Me.gpbMadeGroundContinuous.PerformLayout()
+        Me.gpbMadeGround.ResumeLayout(False)
+        Me.gpbMadeGround.PerformLayout()
+        Me.TabGroundwaterAbstraction.ResumeLayout(False)
+        Me.TabGroundwaterAbstraction.PerformLayout()
+        Me.gpbSourceProtectionZone.ResumeLayout(False)
+        Me.gpbSourceProtectionZone.PerformLayout()
+        Me.gpbLateralFlow.ResumeLayout(False)
+        Me.gpbLateralFlow.PerformLayout()
+        Me.gpbUnderlyingAquiferSourceContamination.ResumeLayout(False)
+        Me.gpbUnderlyingAquiferSourceContamination.PerformLayout()
+        Me.gpbUnderlyingAquifer.ResumeLayout(False)
+        Me.gpbUnderlyingAquifer.PerformLayout()
+        Me.TabSurfaceWaterEnvironment.ResumeLayout(False)
+        Me.TabSurfaceWaterEnvironment.PerformLayout()
+        Me.gpbSurfaceWaterUseNearest.ResumeLayout(False)
+        Me.gpbSurfaceWaterUseNearest.PerformLayout()
+        Me.gpbSurfaceWaterUse.ResumeLayout(False)
+        Me.gpbSurfaceWaterUse.PerformLayout()
+        Me.gpbSensitiveEnvironmentalTargets.ResumeLayout(False)
+        Me.gpbSensitiveEnvironmentalTargets.PerformLayout()
+        Me.gpbWaterBodies.ResumeLayout(False)
+        Me.gpbWaterBodies.PerformLayout()
+        Me.TabContaminationPathways.ResumeLayout(False)
+        Me.TabContaminationPathways.PerformLayout()
+        Me.TabReferences.ResumeLayout(False)
+        Me.TabReferences.PerformLayout()
+        Me.TabYourDetails.ResumeLayout(False)
+        Me.TabYourDetails.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents TabSiteInformation As System.Windows.Forms.TabPage
+    Friend WithEvents tabSurfaceDetails As System.Windows.Forms.TabPage
+    Friend WithEvents btn_CommitChanges As System.Windows.Forms.Button
+    Friend WithEvents btn_Load As System.Windows.Forms.Button
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents btn_Exit As System.Windows.Forms.Button
+    Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents txtSiteCode As System.Windows.Forms.TextBox
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents btn_SaveAs As System.Windows.Forms.Button
+    Friend WithEvents cmbDirectionSlope As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents btn_Access As System.Windows.Forms.Button
+    Friend WithEvents TextAddress2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextAddress1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtSiteName As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents txtTown As System.Windows.Forms.TextBox
+    Friend WithEvents TabSubSurfaceConditions As System.Windows.Forms.TabPage
+    Friend WithEvents TabGroundwaterAbstraction As System.Windows.Forms.TabPage
+    Friend WithEvents TabSurfaceWaterEnvironment As System.Windows.Forms.TabPage
+    Friend WithEvents TabContaminationPathways As System.Windows.Forms.TabPage
+    Friend WithEvents TabReferences As System.Windows.Forms.TabPage
+    Friend WithEvents TabYourDetails As System.Windows.Forms.TabPage
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtCounty As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtPostcode As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtLocalAuthority As System.Windows.Forms.TextBox
+    Friend WithEvents ToolTipSiteCode As System.Windows.Forms.ToolTip
+    Friend WithEvents txtNorthing As System.Windows.Forms.TextBox
+    Friend WithEvents txtEasting As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents chkCoalCarbonisationOnly As System.Windows.Forms.CheckBox
+    Friend WithEvents chkCoalGasification As System.Windows.Forms.CheckBox
+    Friend WithEvents chkGasPurification As System.Windows.Forms.CheckBox
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents txtAnnualRainfall As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSiteOccupation As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSiteGradient As System.Windows.Forms.ComboBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents txtNPartSize As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents lstNGSquare As System.Windows.Forms.ListBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents gpbNatureOfMaterial As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbImpermeable As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbPermeable As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbStandingWaterHistory As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbStandingWaterNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbStandingWaterYes As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbFloodingHistory As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbFloodingNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbFloodingYes As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox10 As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbSurfaceDetailsNo As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbSurfaceDetailsYes As System.Windows.Forms.RadioButton
+    Friend WithEvents txtImpermeableMaterial As System.Windows.Forms.TextBox
+    Friend WithEvents txtPermeableMaterial As System.Windows.Forms.TextBox
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents gpbMadeGround As System.Windows.Forms.GroupBox
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents rdbMadeGroundNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbMadeGroundYes As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbMadeGroundContinuous As System.Windows.Forms.GroupBox
+    Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbMadeGroundNK As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox13 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbPerchedWaterTable As System.Windows.Forms.ComboBox
+    Friend WithEvents gpbPercentages As System.Windows.Forms.GroupBox
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents txtBuildingStructure As System.Windows.Forms.TextBox
+    Friend WithEvents txtGravelLoose As System.Windows.Forms.TextBox
+    Friend WithEvents txtVegetationScrub As System.Windows.Forms.TextBox
+    Friend WithEvents txtExposedSoil As System.Windows.Forms.TextBox
+    Friend WithEvents txtHardstanding As System.Windows.Forms.TextBox
+    Friend WithEvents gpbPermeableImpermeableMaterial As System.Windows.Forms.GroupBox
+    Friend WithEvents gpdCoveredOtherMaterial As System.Windows.Forms.GroupBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents txtCoveredOtherMaterial As System.Windows.Forms.TextBox
+    Friend WithEvents gpbTypeOfDeposit As System.Windows.Forms.GroupBox
+    Friend WithEvents cmbTypeOfDeposit As System.Windows.Forms.ComboBox
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton8 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton9 As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbSuperfialDeposits As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbSuperficialDepositNK As System.Windows.Forms.RadioButton
+    Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents rdbSuperficialDepositNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbSuperficialDepositYes As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbBedrockGeology As System.Windows.Forms.GroupBox
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents cmbBedrockGeology As System.Windows.Forms.ComboBox
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkSewers As System.Windows.Forms.CheckBox
+    Friend WithEvents chkTelecom As System.Windows.Forms.CheckBox
+    Friend WithEvents chkElectricity As System.Windows.Forms.CheckBox
+    Friend WithEvents chkWater As System.Windows.Forms.CheckBox
+    Friend WithEvents chkGas As System.Windows.Forms.CheckBox
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents Label44 As System.Windows.Forms.Label
+    Friend WithEvents Label43 As System.Windows.Forms.Label
+    Friend WithEvents Label45 As System.Windows.Forms.Label
+    Friend WithEvents Label39 As System.Windows.Forms.Label
+    Friend WithEvents Label46 As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtSewerCrossing As System.Windows.Forms.TextBox
+    Friend WithEvents txtTelecomCrossing As System.Windows.Forms.TextBox
+    Friend WithEvents txtWaterCrossing As System.Windows.Forms.TextBox
+    Friend WithEvents txtElectricityCrossing As System.Windows.Forms.TextBox
+    Friend WithEvents txtGasCrossing As System.Windows.Forms.TextBox
+    Friend WithEvents Label47 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label50 As System.Windows.Forms.Label
+    Friend WithEvents cmbDataSource As System.Windows.Forms.ComboBox
+    Friend WithEvents Label49 As System.Windows.Forms.Label
+    Friend WithEvents cmbNRAAquiferVulnerability As System.Windows.Forms.ComboBox
+    Friend WithEvents Label48 As System.Windows.Forms.Label
+    Friend WithEvents cmbNRAAquiferClassification As System.Windows.Forms.ComboBox
+    Friend WithEvents gpbLateralFlow As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbLateralFlowNK As System.Windows.Forms.RadioButton
+    Friend WithEvents Label53 As System.Windows.Forms.Label
+    Friend WithEvents rdbLateralFlowNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbLateralFlowYES As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbUnderlyingAquiferSourceContamination As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbUnderlyingAquiferSourceContaminationNK As System.Windows.Forms.RadioButton
+    Friend WithEvents Label52 As System.Windows.Forms.Label
+    Friend WithEvents rdbUnderlyingAquiferSourceContaminationNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbUnderlyingAquiferSourceContaminationYES As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbUnderlyingAquifer As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbUnderlyingAquiferNK As System.Windows.Forms.RadioButton
+    Friend WithEvents Label51 As System.Windows.Forms.Label
+    Friend WithEvents rdbUnderlyingAquiferNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbUnderlyingAquiferYES As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbSourceProtectionZone As System.Windows.Forms.GroupBox
+    Friend WithEvents rdbSourceProtectionZoneNK As System.Windows.Forms.RadioButton
+    Friend WithEvents Label54 As System.Windows.Forms.Label
+    Friend WithEvents rdbSourceProtectionZoneNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbSourceProtectionZoneYES As System.Windows.Forms.RadioButton
+    Friend WithEvents Label55 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label56 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label57 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode6 As System.Windows.Forms.TextBox
+    Friend WithEvents Label58 As System.Windows.Forms.Label
+    Friend WithEvents txtSiteCode7 As System.Windows.Forms.TextBox
+    Friend WithEvents Label59 As System.Windows.Forms.Label
+    Friend WithEvents chkWaterBodies As System.Windows.Forms.CheckBox
+    Friend WithEvents gpbWaterBodies As System.Windows.Forms.GroupBox
+    Friend WithEvents Label64 As System.Windows.Forms.Label
+    Friend WithEvents chkSensitiveEnvironmentalTargets As System.Windows.Forms.CheckBox
+    Friend WithEvents gpbSensitiveEnvironmentalTargets As System.Windows.Forms.GroupBox
+    Friend WithEvents txtSensitiveEnvironmentalTargetsDistance3 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSensitiveEnvironmentalTargetsType3 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtSensitiveEnvironmentalTargetsDistance2 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSensitiveEnvironmentalTargetsType2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtSensitiveEnvironmentalTargetsDistance1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label65 As System.Windows.Forms.Label
+    Friend WithEvents Label67 As System.Windows.Forms.Label
+    Friend WithEvents cmbSensitiveEnvironmentalTargetsType1 As System.Windows.Forms.ComboBox
+    Friend WithEvents gpbSurfaceWaterUse As System.Windows.Forms.GroupBox
+    Friend WithEvents Label68 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents Label66 As System.Windows.Forms.Label
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
+    Friend WithEvents cmbFlowRate3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbGQAWaterQuality3 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtWaterBodyTypeDistance3 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbWaterBodyType3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbFlowRate2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbGQAWaterQuality2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtWaterBodyTypeDistance2 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbWaterBodyType2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label62 As System.Windows.Forms.Label
+    Friend WithEvents cmbFlowRate1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbGQAWaterQuality1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtWaterBodyTypeDistance1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label60 As System.Windows.Forms.Label
+    Friend WithEvents Label63 As System.Windows.Forms.Label
+    Friend WithEvents Label61 As System.Windows.Forms.Label
+    Friend WithEvents cmbWaterBodyType1 As System.Windows.Forms.ComboBox
+    Friend WithEvents rdbSurfaceWaterUseNK As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbSurfaceWaterUseNO As System.Windows.Forms.RadioButton
+    Friend WithEvents rdbSurfaceWaterUseYES As System.Windows.Forms.RadioButton
+    Friend WithEvents gpbSurfaceWaterUseNearest As System.Windows.Forms.GroupBox
+    Friend WithEvents Label70 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label72 As System.Windows.Forms.Label
+    Friend WithEvents Label73 As System.Windows.Forms.Label
+    Friend WithEvents Label71 As System.Windows.Forms.Label
+    Friend WithEvents Label69 As System.Windows.Forms.Label
+    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label77 As System.Windows.Forms.Label
+    Friend WithEvents Label76 As System.Windows.Forms.Label
+    Friend WithEvents Label74 As System.Windows.Forms.Label
+    Friend WithEvents Label75 As System.Windows.Forms.Label
+
+End Class
